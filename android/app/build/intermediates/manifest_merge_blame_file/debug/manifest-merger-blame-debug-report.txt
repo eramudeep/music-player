@@ -1,0 +1,247 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.musicapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:4:5-67
+12-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:4:22-64
+13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+13-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:5:5-77
+13-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:5:22-74
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->[:react-native-fs] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+14-->[:react-native-fs] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-78
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
+15-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-65
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[com.google.android.exoplayer:exoplayer-core:2.10.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d134e900a18f1646c3df0f281304b3b2/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:24:5-79
+16-->[com.google.android.exoplayer:exoplayer-core:2.10.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d134e900a18f1646c3df0f281304b3b2/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:24:22-76
+17    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+17-->[com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+17-->[com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+18
+19    <application
+19-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:7:5-30:19
+20        android:name="com.musicapp.MainApplication"
+20-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:8:7-38
+21        android:allowBackup="false"
+21-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:12:7-34
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.2.0-beta01] /private/var/root/.gradle/caches/transforms-2/files-2.1/f54c154b79bc4abb97f1e1dbd88298bf/core-1.2.0-beta01/AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:10:7-41
+25        android:label="@string/app_name"
+25-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:9:7-39
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:11:7-52
+27        android:supportsRtl="true"
+27-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:14:7-33
+28        android:theme="@style/AppTheme"
+28-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:13:7-38
+29        android:usesCleartextTraffic="true" >
+29-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:7:18-53
+30        <activity
+30-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:15:7-25:18
+31            android:name="com.musicapp.MainActivity"
+31-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:16:9-37
+32            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+32-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:18:9-79
+33            android:label="@string/app_name"
+33-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:17:9-41
+34            android:screenOrientation="portrait"
+34-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:20:11-47
+35            android:windowSoftInputMode="adjustResize" >
+35-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:19:9-51
+36            <intent-filter>
+36-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:21:9-24:25
+37                <action android:name="android.intent.action.MAIN" />
+37-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:22:13-65
+37-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:22:21-62
+38
+39                <category android:name="android.intent.category.LAUNCHER" />
+39-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:23:13-73
+39-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:23:23-70
+40            </intent-filter>
+41        </activity>
+42        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+42-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:26:7-84
+42-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:26:17-81
+43
+44        <meta-data
+44-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:28:9-29:54
+45            android:name="com.facebook.sdk.ApplicationId"
+45-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:28:20-65
+46            android:value="@string/facebook_app_id" />
+46-->/Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:29:13-52
+47
+48        <service
+48-->[:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:43
+49            android:name="com.tanguyantoine.react.MusicControlNotification$NotificationService"
+49-->[:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-96
+50            android:stopWithTask="true" /> <!-- The main service, handles playback, playlists and media buttons -->
+50-->[:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-40
+51        <service
+51-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-24:19
+52            android:name="com.guichaguri.trackplayer.service.MusicService"
+52-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-75
+53            android:enabled="true"
+53-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-35
+54            android:exported="true" >
+54-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-36
+55            <intent-filter>
+55-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-23:29
+56                <action android:name="android.intent.action.MEDIA_BUTTON" />
+56-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-77
+56-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:25-74
+57            </intent-filter>
+58        </service> <!-- A receiver that will receive media buttons. Required on pre-lollipop devices -->
+59        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
+59-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:20
+59-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:19-76
+60            <intent-filter>
+60-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-23:29
+61                <action android:name="android.intent.action.MEDIA_BUTTON" />
+61-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-77
+61-->[:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:25-74
+62            </intent-filter>
+63        </receiver>
+64
+65        <provider
+65-->[:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+66            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+66-->[:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+67            android:authorities="com.musicapp.fileprovider"
+67-->[:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+68            android:exported="false"
+68-->[:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+69            android:grantUriPermissions="true" >
+69-->[:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+70            <meta-data
+70-->[:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+71                android:name="android.support.FILE_PROVIDER_PATHS"
+71-->[:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+72                android:resource="@xml/file_provider_paths" />
+72-->[:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+73        </provider>
+74
+75        <activity
+75-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:30:9-33:66
+76            android:name="com.facebook.FacebookActivity"
+76-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:31:13-57
+77            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+77-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:32:13-96
+78            android:theme="@style/com_facebook_activity_theme" />
+78-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:33:13-63
+79        <activity android:name="com.facebook.CustomTabMainActivity" />
+79-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:34:9-71
+79-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:34:19-68
+80        <activity
+80-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:35:9-49:20
+81            android:name="com.facebook.CustomTabActivity"
+81-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:36:13-58
+82            android:exported="true" >
+82-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:37:13-36
+83            <intent-filter>
+83-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:39:13-48:29
+84                <action android:name="android.intent.action.VIEW" />
+84-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:40:17-69
+84-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:40:25-66
+85
+86                <category android:name="android.intent.category.DEFAULT" />
+86-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:42:17-76
+86-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:42:27-73
+87                <category android:name="android.intent.category.BROWSABLE" />
+87-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:43:17-78
+87-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:43:27-75
+88
+89                <data
+89-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:45:17-47:50
+90                    android:host="cct.com.musicapp"
+90-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:46:21-56
+91                    android:scheme="fbconnect" />
+91-->[com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:47:21-47
+92            </intent-filter>
+93        </activity>
+94        <activity
+94-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+95            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+95-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+96            android:excludeFromRecents="true"
+96-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+97            android:exported="false"
+97-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+98-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+99        <!--
+100            Service handling Google Sign-In user revocation. For apps that do not integrate with
+101            Google Sign-In, this service will never be started.
+102        -->
+103        <service
+103-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+104            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+104-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+105            android:exported="true"
+105-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+106            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+106-->[com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+107
+108        <activity
+108-->[com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+109            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+109-->[com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+110            android:exported="false"
+110-->[com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+111            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+111-->[com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+112
+113        <meta-data
+113-->[com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+114            android:name="com.google.android.gms.version"
+114-->[com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+115            android:value="@integer/google_play_services_version" />
+115-->[com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+116        <!--
+117         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+118         with the application context. This config is merged in with the host app's manifest,
+119         but there can only be one provider with the same authority activated at any given
+120         point; so if the end user has two or more different apps that use Facebook SDK, only the
+121         first one will be able to use the provider. To work around this problem, we use the
+122         following placeholder in the authority to identify each host application as if it was
+123         a completely different provider.
+124        -->
+125        <provider
+125-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:39:9-42:40
+126            android:name="com.facebook.internal.FacebookInitProvider"
+126-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:40:13-70
+127            android:authorities="com.musicapp.FacebookInitProvider"
+127-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:41:13-72
+128            android:exported="false" />
+128-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:42:13-37
+129
+130        <receiver
+130-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:44:9-50:20
+131            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+131-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:45:13-86
+132            android:exported="false" >
+132-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:46:13-37
+133            <intent-filter>
+133-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:47:13-49:29
+134                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+134-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:17-95
+134-->[com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:25-92
+135            </intent-filter>
+136        </receiver>
+137    </application>
+138
+139</manifest>
