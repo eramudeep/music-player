@@ -1,572 +1,569 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:1:1-32:12
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:1:1-32:12
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:1:1-32:12
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:1:1-32:12
-MERGED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:1:1-32:12
-MERGED from [androidx.multidex:multidex:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/bb470270143b628e82aadf7b82dd532c/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [:react-native-fs] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-13:12
-MERGED from [:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-17:12
-MERGED from [:react-native-community_google-signin] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-community_masked-view] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-community_slider] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/slider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-fbsdk] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:1-28:12
-MERGED from [:react-native-gesture-handler] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-localization] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-localization/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-reanimated] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-restart] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-restart/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-safe-area-context] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-9:12
-MERGED from [:react-native-screens] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-34:12
-MERGED from [:react-native-vector-icons] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-video] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-video/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-23:12
-MERGED from [com.facebook.react:react-native:0.61.5] /private/var/root/.gradle/caches/transforms-2/files-2.1/322c116699e9e84537dd0a27417ca459/jetified-react-native-0.61.5/AndroidManifest.xml:2:1-13:12
-MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/dc6c01f4cc8171a8a285aa5a6e986a51/facebook-android-sdk-5.15.3/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-login:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1ecd45e95cea99a5ecfa0ce994c77773/facebook-login-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/69706e5cffbfdf5967ebd084c7ec08f7/facebook-share-7.1.0/AndroidManifest.xml:21:1-31:12
-MERGED from [com.google.android.material:material:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/38c6db01caa669f2b875621a67d16609/material-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:21:1-52:12
-MERGED from [androidx.appcompat:appcompat:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a7a179574043accd65cf7a3978eaba12/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [org.webkit:android-jsc:r245459] /private/var/root/.gradle/caches/transforms-2/files-2.1/a30549bc91f6f5ce39704a4f8029349a/android-jsc-r245459/AndroidManifest.xml:2:1-11:12
-MERGED from [:react-native-linear-gradient] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d6d46657e2b25d41fa3f2e712e18498a/jetified-glide-4.7.1/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/99f5b9f8690c9839bf5ec2d3acbb82be/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:17:1-39:12
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e3a4f99a5a28dc1cf344a894d860644e/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/2bf8d4d87047188f76498c4820677c3b/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/4b1895f192c96ec23a6c4280b8f1bebd/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/5b5f0081c233e69fe9070f6b4c863401/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.2.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/f021d1773542958f90f64b38e4dd1bff/fragment-1.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.browser:browser:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/c5b32b3fb164d874566c2806fc9dfffe/browser-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/58301893cb7388f5f1453c344fe4a77f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e4ec52622d7ce5d562f932ccd20a3eb6/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/d429d8b600538a8f08eaefa2d2f8268d/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0b77bf4ae3b97af4a6f063e2282b31d9/media-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.android:facebook-applinks:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/829698afbde5210f4c91769bd08bf267/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-places:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/d724a54a2bb1965702edd8ba64ce9c62/facebook-places-5.15.3/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/7549c0d64bfe6db4f4e3881e48900b09/facebook-messenger-5.15.3/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:21:1-53:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/36cd9a56bea76a85855dbda21effb1ff/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/590fe91f4126d20a5d5e35a218360af9/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/920d64b1167d256c3102697201d36cb7/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/f38c2f8f28df65fd31771ada4c0490a4/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/26af669f9f6f559f1238ec62e703cca8/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/4819074c550df2b4ac5a899a7a0fa319/activity-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/14478f27501698833c76afb51c904530/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/77f2d8fb2c8a6927d2eb5a120ede10fc/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0e74a848619dc6cea771fc6241cf817c/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/62d38546f4f94c015e1f5b7bba07b2ae/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/84531193088e1db5d84f0932e87fefb7/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0b4bb7c561a9a5aa72082c62e893e97a/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1c8088e41dec6e7f5a2f2f7222bf54cb/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.2.0-beta01] /private/var/root/.gradle/caches/transforms-2/files-2.1/f54c154b79bc4abb97f1e1dbd88298bf/core-1.2.0-beta01/AndroidManifest.xml:17:1-26:12
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d134e900a18f1646c3df0f281304b3b2/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] /private/var/root/.gradle/caches/transforms-2/files-2.1/95ecda4247d07b32d7fa5429b5ab047e/localbroadcastmanager-1.1.0-alpha01/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/494a6a172edf7c1be18bdaa5150de930/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2624163b35a1f8161f9b9c719fae462/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/30015c67caf9e71ebb291eec696e5d58/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/671397febcfd0c09c6d7ea265d42bca4/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/726c2e8f2c626cf72d3d42b5c6f12d6e/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/ade5ce56baa7a299ce64bca1817ee6a2/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/2e631811d113aef3b71ee7edb41e37a7/jetified-gifdecoder-4.7.1/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/95540db05a11c95bf12e960e8cd08385/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8f0b8e9ba7ffec7a6883ba2c8f5fac2c/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8be9f21ea3cfbd5cf2618e2fc5f20d23/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/21c71468829bcf7e300d2b1dc5af56f6/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/63d563958e99b81c0bc289046f38e81b/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/82302ec5bc2fc0943daeb9f6267bb90e/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/d8a90dda8f5d74cfb7f88dd300ed6daf/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.fresco:fresco:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/757fb1404a44ffa9718e1c54fdd54496/fresco-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8c0b2fd547116db06960ec4f52be998a/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:drawee:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/496607f6eeb399132739d8b725f51598/drawee-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/bdd28870593a9529810ac615011be9dc/nativeimagefilters-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/739dbfc2365265bde2f2b38629fe50df/imagepipeline-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/499cee55b6116de7db8b710cbd070e32/nativeimagetranscoder-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/80eb4edd97dc786c7de9a3e2476cbf39/imagepipeline-base-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.6.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/670fb90127eac9fbf70852d29e2311cb/soloader-0.6.0/AndroidManifest.xml:2:1-13:12
-MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /private/var/root/.gradle/caches/transforms-2/files-2.1/6c36aee0db3d7d60093545fa5f62f433/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:2:1-12:12
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/f631e63af39a417f685abf97d632e89f/jetified-fbcore-2.0.0/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:2:1-13:12
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:2:1-8:12
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:1:1-32:12
+INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:1:1-32:12
+MERGED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:1:1-32:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bb470270143b628e82aadf7b82dd532c\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:react-native-fs] D:\react-native\music-player\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [:react-native-music-control] D:\react-native\music-player\node_modules\react-native-music-control\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:@react-native-community_async-storage] D:\react-native\music-player\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:@react-native-community_google-signin] D:\react-native\music-player\node_modules\@react-native-community\google-signin\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:@react-native-community_masked-view] D:\react-native\music-player\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:@react-native-community_slider] D:\react-native\music-player\node_modules\@react-native-community\slider\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-fbsdk] D:\react-native\music-player\node_modules\react-native-fbsdk\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:1-28:12
+MERGED from [:react-native-gesture-handler] D:\react-native\music-player\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-localization] D:\react-native\music-player\node_modules\react-native-localization\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-reanimated] D:\react-native\music-player\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-restart] D:\react-native\music-player\node_modules\react-native-restart\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-safe-area-context] D:\react-native\music-player\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:react-native-screens] D:\react-native\music-player\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-34:12
+MERGED from [:react-native-vector-icons] D:\react-native\music-player\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-video] D:\react-native\music-player\node_modules\react-native-video\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-23:12
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\18d0b34e450d42bd06735196e78a7447\jetified-react-native-0.61.5\AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\dc6c01f4cc8171a8a285aa5a6e986a51\facebook-android-sdk-5.15.3\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1ecd45e95cea99a5ecfa0ce994c77773\facebook-login-7.1.0\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\69706e5cffbfdf5967ebd084c7ec08f7\facebook-share-7.1.0\AndroidManifest.xml:21:1-31:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\2936d37605907eefde21c7af910ad7f1\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:21:1-52:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a7a179574043accd65cf7a3978eaba12\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a30549bc91f6f5ce39704a4f8029349a\android-jsc-r245459\AndroidManifest.xml:2:1-11:12
+MERGED from [:react-native-linear-gradient] D:\react-native\music-player\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\5000757deb3d6d5d7af8a025920b8344\transition-1.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\499a10a7c225d3ae4818eb160397fbe1\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\9c16b9a8bddeed41be888d10007b49bc\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d412c7e2b3c05980e106fe603c442e47\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a236aaebe6201a923aa8f1d4f7e3e36c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\09f03dbe158c3b5286159fb3ae6d8c14\jetified-play-services-basement-16.0.1\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\5b5f0081c233e69fe9070f6b4c863401\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5b32b3fb164d874566c2806fc9dfffe\browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\58301893cb7388f5f1453c344fe4a77f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\e5a1ccd7218b47522c2d4429063e1dc5\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0b77bf4ae3b97af4a6f063e2282b31d9\media-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a5fd592fe80bb5c29fea99c2c9e86208\jetified-facebook-applinks-5.15.3\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-places:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d724a54a2bb1965702edd8ba64ce9c62\facebook-places-5.15.3\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\7549c0d64bfe6db4f4e3881e48900b09\facebook-messenger-5.15.3\AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:21:1-53:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\36cd9a56bea76a85855dbda21effb1ff\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5b4b179d94d62918e89092bfebbcc02\jetified-glide-4.7.1\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\df4deb1e7bab26882e19e255dbf19e59\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\590fe91f4126d20a5d5e35a218360af9\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\920d64b1167d256c3102697201d36cb7\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f38c2f8f28df65fd31771ada4c0490a4\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\77f2d8fb2c8a6927d2eb5a120ede10fc\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0e74a848619dc6cea771fc6241cf817c\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\26af669f9f6f559f1238ec62e703cca8\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\210fec198db42832bde5a42b34ef158a\activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\84531193088e1db5d84f0932e87fefb7\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0b4bb7c561a9a5aa72082c62e893e97a\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d429d8b600538a8f08eaefa2d2f8268d\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1c8088e41dec6e7f5a2f2f7222bf54cb\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f54c154b79bc4abb97f1e1dbd88298bf\core-1.2.0-beta01\AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\006a0267f7677b2ffa583d8083e738f4\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\95ecda4247d07b32d7fa5429b5ab047e\localbroadcastmanager-1.1.0-alpha01\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\494a6a172edf7c1be18bdaa5150de930\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\b2624163b35a1f8161f9b9c719fae462\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\30015c67caf9e71ebb291eec696e5d58\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\6020864de228f112c12b0bdb4305d688\jetified-gifdecoder-4.7.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\95540db05a11c95bf12e960e8cd08385\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\8f0b8e9ba7ffec7a6883ba2c8f5fac2c\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ade5ce56baa7a299ce64bca1817ee6a2\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\410fc30ccbe0703f4df6a79e4658438b\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\9d4bde7230288135b751c01239b890c5\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\21c71468829bcf7e300d2b1dc5af56f6\savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\63d563958e99b81c0bc289046f38e81b\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\cf239cfac1cf085c4a6c5e6ac5afe386\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bea4e08e6d5509f5d02b25f3073cb58f\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\757fb1404a44ffa9718e1c54fdd54496\fresco-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\8c0b2fd547116db06960ec4f52be998a\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\496607f6eeb399132739d8b725f51598\drawee-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bdd28870593a9529810ac615011be9dc\nativeimagefilters-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\739dbfc2365265bde2f2b38629fe50df\imagepipeline-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\499cee55b6116de7db8b710cbd070e32\nativeimagetranscoder-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\80eb4edd97dc786c7de9a3e2476cbf39\imagepipeline-base-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\670fb90127eac9fbf70852d29e2311cb\soloader-0.6.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5ea45b2a23bd1a2ce96e29d0ba7ba6c\jetified-android-scalablevideoview-1.0.4\AndroidManifest.xml:2:1-12:12
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1b06e50d2e9d638ac4bc59e8d7c107d0\jetified-fbcore-2.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\88945c83433c250ff87f43128bfb3567\jetified-installreferrer-1.0\AndroidManifest.xml:2:1-13:12
+INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:2:1-8:12
+INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:2:1-8:12
 	package
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:2:3-25
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:2:3-25
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:2:3-25
+		INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:2:3-25
+		INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:1:1-32:12
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml
+		INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:1:1-32:12
+		INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:3:5-51
+		ADDED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:1:1-32:12
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml
+		INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:1:1-32:12
+		INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:4:5-67
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:4:22-64
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-77
-MERGED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:5-77
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:5:5-77
+MERGED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-77
+MERGED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-77
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:5:22-74
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:5:22-74
 application
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:7:5-30:19
-MERGED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:7:5-30:19
-MERGED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:7:5-30:19
-MERGED from [:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-15:19
-MERGED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-32:19
-MERGED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:5-32:19
-MERGED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-21:19
-MERGED from [com.facebook.react:react-native:0.61.5] /private/var/root/.gradle/caches/transforms-2/files-2.1/322c116699e9e84537dd0a27417ca459/jetified-react-native-0.61.5/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.react:react-native:0.61.5] /private/var/root/.gradle/caches/transforms-2/files-2.1/322c116699e9e84537dd0a27417ca459/jetified-react-native-0.61.5/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/dc6c01f4cc8171a8a285aa5a6e986a51/facebook-android-sdk-5.15.3/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/dc6c01f4cc8171a8a285aa5a6e986a51/facebook-android-sdk-5.15.3/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1ecd45e95cea99a5ecfa0ce994c77773/facebook-login-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1ecd45e95cea99a5ecfa0ce994c77773/facebook-login-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/69706e5cffbfdf5967ebd084c7ec08f7/facebook-share-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/69706e5cffbfdf5967ebd084c7ec08f7/facebook-share-7.1.0/AndroidManifest.xml:28:5-29:19
-MERGED from [com.google.android.material:material:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/38c6db01caa669f2b875621a67d16609/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/38c6db01caa669f2b875621a67d16609/material-1.1.0/AndroidManifest.xml:22:5-20
-MERGED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:29:5-50:19
-MERGED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:29:5-50:19
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d6d46657e2b25d41fa3f2e712e18498a/jetified-glide-4.7.1/AndroidManifest.xml:11:5-20
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d6d46657e2b25d41fa3f2e712e18498a/jetified-glide-4.7.1/AndroidManifest.xml:11:5-20
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:22:5-37:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/4b1895f192c96ec23a6c4280b8f1bebd/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/4b1895f192c96ec23a6c4280b8f1bebd/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:22:5-26:19
-MERGED from [com.facebook.android:facebook-applinks:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/829698afbde5210f4c91769bd08bf267/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/829698afbde5210f4c91769bd08bf267/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/d724a54a2bb1965702edd8ba64ce9c62/facebook-places-5.15.3/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/d724a54a2bb1965702edd8ba64ce9c62/facebook-places-5.15.3/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/7549c0d64bfe6db4f4e3881e48900b09/facebook-messenger-5.15.3/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/7549c0d64bfe6db4f4e3881e48900b09/facebook-messenger-5.15.3/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:28:5-51:19
-MERGED from [androidx.core:core:1.2.0-beta01] /private/var/root/.gradle/caches/transforms-2/files-2.1/f54c154b79bc4abb97f1e1dbd88298bf/core-1.2.0-beta01/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.2.0-beta01] /private/var/root/.gradle/caches/transforms-2/files-2.1/f54c154b79bc4abb97f1e1dbd88298bf/core-1.2.0-beta01/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/30015c67caf9e71ebb291eec696e5d58/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/30015c67caf9e71ebb291eec696e5d58/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/2e631811d113aef3b71ee7edb41e37a7/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/2e631811d113aef3b71ee7edb41e37a7/jetified-gifdecoder-4.7.1/AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/670fb90127eac9fbf70852d29e2311cb/soloader-0.6.0/AndroidManifest.xml:11:5-20
-MERGED from [com.facebook.soloader:soloader:0.6.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/670fb90127eac9fbf70852d29e2311cb/soloader-0.6.0/AndroidManifest.xml:11:5-20
-MERGED from [com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:11:5-20
-MERGED from [com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:11:5-20
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:7:5-30:19
+MERGED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:7:5-30:19
+MERGED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:7:5-30:19
+MERGED from [:react-native-music-control] D:\react-native\music-player\node_modules\react-native-music-control\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-music-control] D:\react-native\music-player\node_modules\react-native-music-control\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-15:19
+MERGED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-32:19
+MERGED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-32:19
+MERGED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
+MERGED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-21:19
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\18d0b34e450d42bd06735196e78a7447\jetified-react-native-0.61.5\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\18d0b34e450d42bd06735196e78a7447\jetified-react-native-0.61.5\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\dc6c01f4cc8171a8a285aa5a6e986a51\facebook-android-sdk-5.15.3\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\dc6c01f4cc8171a8a285aa5a6e986a51\facebook-android-sdk-5.15.3\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1ecd45e95cea99a5ecfa0ce994c77773\facebook-login-7.1.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1ecd45e95cea99a5ecfa0ce994c77773\facebook-login-7.1.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\69706e5cffbfdf5967ebd084c7ec08f7\facebook-share-7.1.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\69706e5cffbfdf5967ebd084c7ec08f7\facebook-share-7.1.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\2936d37605907eefde21c7af910ad7f1\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\2936d37605907eefde21c7af910ad7f1\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:29:5-50:19
+MERGED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:29:5-50:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a236aaebe6201a923aa8f1d4f7e3e36c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a236aaebe6201a923aa8f1d4f7e3e36c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\09f03dbe158c3b5286159fb3ae6d8c14\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\09f03dbe158c3b5286159fb3ae6d8c14\jetified-play-services-basement-16.0.1\AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a5fd592fe80bb5c29fea99c2c9e86208\jetified-facebook-applinks-5.15.3\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a5fd592fe80bb5c29fea99c2c9e86208\jetified-facebook-applinks-5.15.3\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d724a54a2bb1965702edd8ba64ce9c62\facebook-places-5.15.3\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d724a54a2bb1965702edd8ba64ce9c62\facebook-places-5.15.3\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\7549c0d64bfe6db4f4e3881e48900b09\facebook-messenger-5.15.3\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\7549c0d64bfe6db4f4e3881e48900b09\facebook-messenger-5.15.3\AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:28:5-51:19
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5b4b179d94d62918e89092bfebbcc02\jetified-glide-4.7.1\AndroidManifest.xml:11:5-20
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5b4b179d94d62918e89092bfebbcc02\jetified-glide-4.7.1\AndroidManifest.xml:11:5-20
+MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f54c154b79bc4abb97f1e1dbd88298bf\core-1.2.0-beta01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f54c154b79bc4abb97f1e1dbd88298bf\core-1.2.0-beta01\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\30015c67caf9e71ebb291eec696e5d58\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\30015c67caf9e71ebb291eec696e5d58\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\6020864de228f112c12b0bdb4305d688\jetified-gifdecoder-4.7.1\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\6020864de228f112c12b0bdb4305d688\jetified-gifdecoder-4.7.1\AndroidManifest.xml:9:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\670fb90127eac9fbf70852d29e2311cb\soloader-0.6.0\AndroidManifest.xml:11:5-20
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\670fb90127eac9fbf70852d29e2311cb\soloader-0.6.0\AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\88945c83433c250ff87f43128bfb3567\jetified-installreferrer-1.0\AndroidManifest.xml:11:5-20
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\88945c83433c250ff87f43128bfb3567\jetified-installreferrer-1.0\AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.2.0-beta01] /private/var/root/.gradle/caches/transforms-2/files-2.1/f54c154b79bc4abb97f1e1dbd88298bf/core-1.2.0-beta01/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.2.0-beta01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f54c154b79bc4abb97f1e1dbd88298bf\core-1.2.0-beta01\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:14:7-33
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:14:7-33
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:14:7-33
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:14:7-33
 	android:label
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:9:7-39
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:9:7-39
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:9:7-39
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:9:7-39
 	tools:ignore
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:7:75-114
+		ADDED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:7:75-114
 	android:roundIcon
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:11:7-52
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:11:7-52
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:11:7-52
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:11:7-52
 	tools:targetApi
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:7:54-74
+		ADDED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:7:54-74
 	android:icon
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:10:7-41
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:10:7-41
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:10:7-41
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:10:7-41
 	android:allowBackup
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:12:7-34
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:12:7-34
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:12:7-34
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:12:7-34
 	android:theme
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:13:7-38
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:13:7-38
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:13:7-38
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:13:7-38
 	android:usesCleartextTraffic
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:7:18-53
+		ADDED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:7:18-53
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:8:7-38
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:8:7-38
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:8:7-38
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:8:7-38
 activity#com.musicapp.MainActivity
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:15:7-25:18
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:15:7-25:18
 	android:screenOrientation
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:20:11-47
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:20:11-47
 	android:label
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:17:9-41
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:17:9-41
 	android:windowSoftInputMode
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:19:9-51
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:19:9-51
 	android:configChanges
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:18:9-79
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:18:9-79
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:16:9-37
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:16:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:21:9-24:25
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:21:9-24:25
 action#android.intent.action.MAIN
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:22:13-65
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:22:13-65
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:22:21-62
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:22:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:23:13-73
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:23:13-73
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:23:23-70
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:23:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:26:7-84
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:26:7-84
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:26:17-81
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:26:17-81
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:28:9-29:54
+ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:28:9-29:54
 	android:value
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:29:13-52
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:29:13-52
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml:28:20-65
+		ADDED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml:28:20-65
 uses-sdk
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml
-MERGED from [androidx.multidex:multidex:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/bb470270143b628e82aadf7b82dd532c/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [androidx.multidex:multidex:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/bb470270143b628e82aadf7b82dd532c/multidex-2.0.0/AndroidManifest.xml:20:5-43
-MERGED from [:react-native-fs] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-fs] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_google-signin] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_google-signin] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/google-signin/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-community_masked-view] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_masked-view] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/masked-view/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_slider] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/slider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-community_slider] /Users/amusoftech/Downloads/music_player_design-master/node_modules/@react-native-community/slider/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-fbsdk] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-fbsdk] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fbsdk/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:24:5-26:41
-MERGED from [:react-native-gesture-handler] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-gesture-handler] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-gesture-handler/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-localization] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-localization/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-localization] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-localization/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-reanimated] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-reanimated/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-restart] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-restart/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-restart] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-restart/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-safe-area-context] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-safe-area-context] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-safe-area-context/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [:react-native-screens] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-screens] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-screens/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-vector-icons] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-vector-icons/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-video] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-video/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-video] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-video/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.5] /private/var/root/.gradle/caches/transforms-2/files-2.1/322c116699e9e84537dd0a27417ca459/jetified-react-native-0.61.5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.61.5] /private/var/root/.gradle/caches/transforms-2/files-2.1/322c116699e9e84537dd0a27417ca459/jetified-react-native-0.61.5/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/dc6c01f4cc8171a8a285aa5a6e986a51/facebook-android-sdk-5.15.3/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/dc6c01f4cc8171a8a285aa5a6e986a51/facebook-android-sdk-5.15.3/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1ecd45e95cea99a5ecfa0ce994c77773/facebook-login-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1ecd45e95cea99a5ecfa0ce994c77773/facebook-login-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/69706e5cffbfdf5967ebd084c7ec08f7/facebook-share-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/69706e5cffbfdf5967ebd084c7ec08f7/facebook-share-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.google.android.material:material:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/38c6db01caa669f2b875621a67d16609/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/38c6db01caa669f2b875621a67d16609/material-1.1.0/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:25:5-27:41
-MERGED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:25:5-27:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a7a179574043accd65cf7a3978eaba12/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a7a179574043accd65cf7a3978eaba12/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [org.webkit:android-jsc:r245459] /private/var/root/.gradle/caches/transforms-2/files-2.1/a30549bc91f6f5ce39704a4f8029349a/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [org.webkit:android-jsc:r245459] /private/var/root/.gradle/caches/transforms-2/files-2.1/a30549bc91f6f5ce39704a4f8029349a/android-jsc-r245459/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [:react-native-linear-gradient] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-linear-gradient/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d6d46657e2b25d41fa3f2e712e18498a/jetified-glide-4.7.1/AndroidManifest.xml:7:5-9:41
-MERGED from [com.github.bumptech.glide:glide:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d6d46657e2b25d41fa3f2e712e18498a/jetified-glide-4.7.1/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/99f5b9f8690c9839bf5ec2d3acbb82be/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/99f5b9f8690c9839bf5ec2d3acbb82be/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e3a4f99a5a28dc1cf344a894d860644e/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e3a4f99a5a28dc1cf344a894d860644e/jetified-play-services-auth-api-phone-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/2bf8d4d87047188f76498c4820677c3b/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/2bf8d4d87047188f76498c4820677c3b/jetified-play-services-auth-base-16.0.0/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/4b1895f192c96ec23a6c4280b8f1bebd/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/4b1895f192c96ec23a6c4280b8f1bebd/jetified-play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/5b5f0081c233e69fe9070f6b4c863401/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/5b5f0081c233e69fe9070f6b4c863401/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.2.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/f021d1773542958f90f64b38e4dd1bff/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.2.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/f021d1773542958f90f64b38e4dd1bff/fragment-1.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.browser:browser:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/c5b32b3fb164d874566c2806fc9dfffe/browser-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/c5b32b3fb164d874566c2806fc9dfffe/browser-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/58301893cb7388f5f1453c344fe4a77f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/58301893cb7388f5f1453c344fe4a77f/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e4ec52622d7ce5d562f932ccd20a3eb6/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/e4ec52622d7ce5d562f932ccd20a3eb6/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/d429d8b600538a8f08eaefa2d2f8268d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/d429d8b600538a8f08eaefa2d2f8268d/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0b77bf4ae3b97af4a6f063e2282b31d9/media-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0b77bf4ae3b97af4a6f063e2282b31d9/media-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.android:facebook-applinks:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/829698afbde5210f4c91769bd08bf267/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/829698afbde5210f4c91769bd08bf267/jetified-facebook-applinks-5.15.3/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/d724a54a2bb1965702edd8ba64ce9c62/facebook-places-5.15.3/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/d724a54a2bb1965702edd8ba64ce9c62/facebook-places-5.15.3/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/7549c0d64bfe6db4f4e3881e48900b09/facebook-messenger-5.15.3/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:5.15.3] /private/var/root/.gradle/caches/transforms-2/files-2.1/7549c0d64bfe6db4f4e3881e48900b09/facebook-messenger-5.15.3/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:24:5-26:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/36cd9a56bea76a85855dbda21effb1ff/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/36cd9a56bea76a85855dbda21effb1ff/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/590fe91f4126d20a5d5e35a218360af9/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/590fe91f4126d20a5d5e35a218360af9/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/920d64b1167d256c3102697201d36cb7/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/920d64b1167d256c3102697201d36cb7/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/f38c2f8f28df65fd31771ada4c0490a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/f38c2f8f28df65fd31771ada4c0490a4/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/26af669f9f6f559f1238ec62e703cca8/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/26af669f9f6f559f1238ec62e703cca8/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/4819074c550df2b4ac5a899a7a0fa319/activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/4819074c550df2b4ac5a899a7a0fa319/activity-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/14478f27501698833c76afb51c904530/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/14478f27501698833c76afb51c904530/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/77f2d8fb2c8a6927d2eb5a120ede10fc/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/77f2d8fb2c8a6927d2eb5a120ede10fc/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0e74a848619dc6cea771fc6241cf817c/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0e74a848619dc6cea771fc6241cf817c/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/62d38546f4f94c015e1f5b7bba07b2ae/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/62d38546f4f94c015e1f5b7bba07b2ae/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/84531193088e1db5d84f0932e87fefb7/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/84531193088e1db5d84f0932e87fefb7/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0b4bb7c561a9a5aa72082c62e893e97a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0b4bb7c561a9a5aa72082c62e893e97a/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1c8088e41dec6e7f5a2f2f7222bf54cb/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/1c8088e41dec6e7f5a2f2f7222bf54cb/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.2.0-beta01] /private/var/root/.gradle/caches/transforms-2/files-2.1/f54c154b79bc4abb97f1e1dbd88298bf/core-1.2.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.2.0-beta01] /private/var/root/.gradle/caches/transforms-2/files-2.1/f54c154b79bc4abb97f1e1dbd88298bf/core-1.2.0-beta01/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d134e900a18f1646c3df0f281304b3b2/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d134e900a18f1646c3df0f281304b3b2/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] /private/var/root/.gradle/caches/transforms-2/files-2.1/95ecda4247d07b32d7fa5429b5ab047e/localbroadcastmanager-1.1.0-alpha01/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] /private/var/root/.gradle/caches/transforms-2/files-2.1/95ecda4247d07b32d7fa5429b5ab047e/localbroadcastmanager-1.1.0-alpha01/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/494a6a172edf7c1be18bdaa5150de930/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/494a6a172edf7c1be18bdaa5150de930/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2624163b35a1f8161f9b9c719fae462/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2624163b35a1f8161f9b9c719fae462/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/30015c67caf9e71ebb291eec696e5d58/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/30015c67caf9e71ebb291eec696e5d58/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/671397febcfd0c09c6d7ea265d42bca4/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/671397febcfd0c09c6d7ea265d42bca4/lifecycle-viewmodel-savedstate-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/726c2e8f2c626cf72d3d42b5c6f12d6e/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/726c2e8f2c626cf72d3d42b5c6f12d6e/lifecycle-viewmodel-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/ade5ce56baa7a299ce64bca1817ee6a2/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/ade5ce56baa7a299ce64bca1817ee6a2/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/2e631811d113aef3b71ee7edb41e37a7/jetified-gifdecoder-4.7.1/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/2e631811d113aef3b71ee7edb41e37a7/jetified-gifdecoder-4.7.1/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/95540db05a11c95bf12e960e8cd08385/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/95540db05a11c95bf12e960e8cd08385/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8f0b8e9ba7ffec7a6883ba2c8f5fac2c/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8f0b8e9ba7ffec7a6883ba2c8f5fac2c/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8be9f21ea3cfbd5cf2618e2fc5f20d23/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8be9f21ea3cfbd5cf2618e2fc5f20d23/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/21c71468829bcf7e300d2b1dc5af56f6/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/21c71468829bcf7e300d2b1dc5af56f6/savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/63d563958e99b81c0bc289046f38e81b/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/63d563958e99b81c0bc289046f38e81b/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/82302ec5bc2fc0943daeb9f6267bb90e/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/82302ec5bc2fc0943daeb9f6267bb90e/lifecycle-livedata-core-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/d8a90dda8f5d74cfb7f88dd300ed6daf/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/d8a90dda8f5d74cfb7f88dd300ed6daf/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/757fb1404a44ffa9718e1c54fdd54496/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/757fb1404a44ffa9718e1c54fdd54496/fresco-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8c0b2fd547116db06960ec4f52be998a/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/8c0b2fd547116db06960ec4f52be998a/imagepipeline-okhttp3-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/496607f6eeb399132739d8b725f51598/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/496607f6eeb399132739d8b725f51598/drawee-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/bdd28870593a9529810ac615011be9dc/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/bdd28870593a9529810ac615011be9dc/nativeimagefilters-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/739dbfc2365265bde2f2b38629fe50df/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/739dbfc2365265bde2f2b38629fe50df/imagepipeline-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/499cee55b6116de7db8b710cbd070e32/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/499cee55b6116de7db8b710cbd070e32/nativeimagetranscoder-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/80eb4edd97dc786c7de9a3e2476cbf39/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/80eb4edd97dc786c7de9a3e2476cbf39/imagepipeline-base-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/670fb90127eac9fbf70852d29e2311cb/soloader-0.6.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.soloader:soloader:0.6.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/670fb90127eac9fbf70852d29e2311cb/soloader-0.6.0/AndroidManifest.xml:7:5-9:41
-MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /private/var/root/.gradle/caches/transforms-2/files-2.1/6c36aee0db3d7d60093545fa5f62f433/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
-MERGED from [com.yqritc:android-scalablevideoview:1.0.4] /private/var/root/.gradle/caches/transforms-2/files-2.1/6c36aee0db3d7d60093545fa5f62f433/jetified-android-scalablevideoview-1.0.4/AndroidManifest.xml:8:5-10:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/f631e63af39a417f685abf97d632e89f/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:2.0.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/f631e63af39a417f685abf97d632e89f/jetified-fbcore-2.0.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:5:5-7:41
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml
-INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml
+INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bb470270143b628e82aadf7b82dd532c\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bb470270143b628e82aadf7b82dd532c\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [:react-native-fs] D:\react-native\music-player\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-fs] D:\react-native\music-player\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-music-control] D:\react-native\music-player\node_modules\react-native-music-control\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-music-control] D:\react-native\music-player\node_modules\react-native-music-control\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_async-storage] D:\react-native\music-player\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_async-storage] D:\react-native\music-player\node_modules\@react-native-community\async-storage\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_google-signin] D:\react-native\music-player\node_modules\@react-native-community\google-signin\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_google-signin] D:\react-native\music-player\node_modules\@react-native-community\google-signin\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:@react-native-community_masked-view] D:\react-native\music-player\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_masked-view] D:\react-native\music-player\node_modules\@react-native-community\masked-view\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_slider] D:\react-native\music-player\node_modules\@react-native-community\slider\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:@react-native-community_slider] D:\react-native\music-player\node_modules\@react-native-community\slider\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-fbsdk] D:\react-native\music-player\node_modules\react-native-fbsdk\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-fbsdk] D:\react-native\music-player\node_modules\react-native-fbsdk\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-26:41
+MERGED from [:react-native-gesture-handler] D:\react-native\music-player\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-gesture-handler] D:\react-native\music-player\node_modules\react-native-gesture-handler\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-localization] D:\react-native\music-player\node_modules\react-native-localization\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-localization] D:\react-native\music-player\node_modules\react-native-localization\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] D:\react-native\music-player\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-reanimated] D:\react-native\music-player\node_modules\react-native-reanimated\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-restart] D:\react-native\music-player\node_modules\react-native-restart\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-restart] D:\react-native\music-player\node_modules\react-native-restart\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-safe-area-context] D:\react-native\music-player\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-safe-area-context] D:\react-native\music-player\node_modules\react-native-safe-area-context\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:react-native-screens] D:\react-native\music-player\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-screens] D:\react-native\music-player\node_modules\react-native-screens\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] D:\react-native\music-player\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-vector-icons] D:\react-native\music-player\node_modules\react-native-vector-icons\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-video] D:\react-native\music-player\node_modules\react-native-video\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-video] D:\react-native\music-player\node_modules\react-native-video\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\18d0b34e450d42bd06735196e78a7447\jetified-react-native-0.61.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.61.5] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\18d0b34e450d42bd06735196e78a7447\jetified-react-native-0.61.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\dc6c01f4cc8171a8a285aa5a6e986a51\facebook-android-sdk-5.15.3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\dc6c01f4cc8171a8a285aa5a6e986a51\facebook-android-sdk-5.15.3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1ecd45e95cea99a5ecfa0ce994c77773\facebook-login-7.1.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1ecd45e95cea99a5ecfa0ce994c77773\facebook-login-7.1.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\69706e5cffbfdf5967ebd084c7ec08f7\facebook-share-7.1.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\69706e5cffbfdf5967ebd084c7ec08f7\facebook-share-7.1.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\2936d37605907eefde21c7af910ad7f1\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\2936d37605907eefde21c7af910ad7f1\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:25:5-27:41
+MERGED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:25:5-27:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a7a179574043accd65cf7a3978eaba12\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a7a179574043accd65cf7a3978eaba12\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a30549bc91f6f5ce39704a4f8029349a\android-jsc-r245459\AndroidManifest.xml:7:5-9:41
+MERGED from [org.webkit:android-jsc:r245459] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a30549bc91f6f5ce39704a4f8029349a\android-jsc-r245459\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] D:\react-native\music-player\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] D:\react-native\music-player\node_modules\react-native-linear-gradient\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\5000757deb3d6d5d7af8a025920b8344\transition-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\5000757deb3d6d5d7af8a025920b8344\transition-1.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\499a10a7c225d3ae4818eb160397fbe1\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\499a10a7c225d3ae4818eb160397fbe1\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\9c16b9a8bddeed41be888d10007b49bc\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:16.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\9c16b9a8bddeed41be888d10007b49bc\jetified-play-services-auth-api-phone-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d412c7e2b3c05980e106fe603c442e47\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:16.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d412c7e2b3c05980e106fe603c442e47\jetified-play-services-auth-base-16.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a236aaebe6201a923aa8f1d4f7e3e36c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a236aaebe6201a923aa8f1d4f7e3e36c\jetified-play-services-tasks-16.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\09f03dbe158c3b5286159fb3ae6d8c14\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\09f03dbe158c3b5286159fb3ae6d8c14\jetified-play-services-basement-16.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\5b5f0081c233e69fe9070f6b4c863401\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\5b5f0081c233e69fe9070f6b4c863401\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5b32b3fb164d874566c2806fc9dfffe\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5b32b3fb164d874566c2806fc9dfffe\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\58301893cb7388f5f1453c344fe4a77f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\58301893cb7388f5f1453c344fe4a77f\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\e5a1ccd7218b47522c2d4429063e1dc5\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\e5a1ccd7218b47522c2d4429063e1dc5\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0b77bf4ae3b97af4a6f063e2282b31d9\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0b77bf4ae3b97af4a6f063e2282b31d9\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a5fd592fe80bb5c29fea99c2c9e86208\jetified-facebook-applinks-5.15.3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a5fd592fe80bb5c29fea99c2c9e86208\jetified-facebook-applinks-5.15.3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d724a54a2bb1965702edd8ba64ce9c62\facebook-places-5.15.3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d724a54a2bb1965702edd8ba64ce9c62\facebook-places-5.15.3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\7549c0d64bfe6db4f4e3881e48900b09\facebook-messenger-5.15.3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:5.15.3] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\7549c0d64bfe6db4f4e3881e48900b09\facebook-messenger-5.15.3\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:24:5-26:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\36cd9a56bea76a85855dbda21effb1ff\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\36cd9a56bea76a85855dbda21effb1ff\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5b4b179d94d62918e89092bfebbcc02\jetified-glide-4.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.bumptech.glide:glide:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5b4b179d94d62918e89092bfebbcc02\jetified-glide-4.7.1\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\df4deb1e7bab26882e19e255dbf19e59\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\df4deb1e7bab26882e19e255dbf19e59\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\590fe91f4126d20a5d5e35a218360af9\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\590fe91f4126d20a5d5e35a218360af9\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\920d64b1167d256c3102697201d36cb7\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\920d64b1167d256c3102697201d36cb7\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f38c2f8f28df65fd31771ada4c0490a4\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f38c2f8f28df65fd31771ada4c0490a4\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\77f2d8fb2c8a6927d2eb5a120ede10fc\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\77f2d8fb2c8a6927d2eb5a120ede10fc\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0e74a848619dc6cea771fc6241cf817c\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0e74a848619dc6cea771fc6241cf817c\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\26af669f9f6f559f1238ec62e703cca8\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\26af669f9f6f559f1238ec62e703cca8\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\210fec198db42832bde5a42b34ef158a\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\210fec198db42832bde5a42b34ef158a\activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\84531193088e1db5d84f0932e87fefb7\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\84531193088e1db5d84f0932e87fefb7\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0b4bb7c561a9a5aa72082c62e893e97a\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0b4bb7c561a9a5aa72082c62e893e97a\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d429d8b600538a8f08eaefa2d2f8268d\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\d429d8b600538a8f08eaefa2d2f8268d\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1c8088e41dec6e7f5a2f2f7222bf54cb\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1c8088e41dec6e7f5a2f2f7222bf54cb\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f54c154b79bc4abb97f1e1dbd88298bf\core-1.2.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.2.0-beta01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f54c154b79bc4abb97f1e1dbd88298bf\core-1.2.0-beta01\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\006a0267f7677b2ffa583d8083e738f4\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\006a0267f7677b2ffa583d8083e738f4\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\95ecda4247d07b32d7fa5429b5ab047e\localbroadcastmanager-1.1.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.1.0-alpha01] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\95ecda4247d07b32d7fa5429b5ab047e\localbroadcastmanager-1.1.0-alpha01\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\494a6a172edf7c1be18bdaa5150de930\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\494a6a172edf7c1be18bdaa5150de930\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\b2624163b35a1f8161f9b9c719fae462\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\b2624163b35a1f8161f9b9c719fae462\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\30015c67caf9e71ebb291eec696e5d58\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\30015c67caf9e71ebb291eec696e5d58\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\6020864de228f112c12b0bdb4305d688\jetified-gifdecoder-4.7.1\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.7.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\6020864de228f112c12b0bdb4305d688\jetified-gifdecoder-4.7.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\95540db05a11c95bf12e960e8cd08385\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\95540db05a11c95bf12e960e8cd08385\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\8f0b8e9ba7ffec7a6883ba2c8f5fac2c\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\8f0b8e9ba7ffec7a6883ba2c8f5fac2c\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ade5ce56baa7a299ce64bca1817ee6a2\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ade5ce56baa7a299ce64bca1817ee6a2\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\410fc30ccbe0703f4df6a79e4658438b\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\410fc30ccbe0703f4df6a79e4658438b\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\9d4bde7230288135b751c01239b890c5\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\9d4bde7230288135b751c01239b890c5\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\21c71468829bcf7e300d2b1dc5af56f6\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\21c71468829bcf7e300d2b1dc5af56f6\savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\63d563958e99b81c0bc289046f38e81b\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\63d563958e99b81c0bc289046f38e81b\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\cf239cfac1cf085c4a6c5e6ac5afe386\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\cf239cfac1cf085c4a6c5e6ac5afe386\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bea4e08e6d5509f5d02b25f3073cb58f\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bea4e08e6d5509f5d02b25f3073cb58f\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\757fb1404a44ffa9718e1c54fdd54496\fresco-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\757fb1404a44ffa9718e1c54fdd54496\fresco-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\8c0b2fd547116db06960ec4f52be998a\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\8c0b2fd547116db06960ec4f52be998a\imagepipeline-okhttp3-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\496607f6eeb399132739d8b725f51598\drawee-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\496607f6eeb399132739d8b725f51598\drawee-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bdd28870593a9529810ac615011be9dc\nativeimagefilters-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagefilters:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\bdd28870593a9529810ac615011be9dc\nativeimagefilters-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\739dbfc2365265bde2f2b38629fe50df\imagepipeline-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\739dbfc2365265bde2f2b38629fe50df\imagepipeline-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\499cee55b6116de7db8b710cbd070e32\nativeimagetranscoder-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:nativeimagetranscoder:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\499cee55b6116de7db8b710cbd070e32\nativeimagetranscoder-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\80eb4edd97dc786c7de9a3e2476cbf39\imagepipeline-base-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\80eb4edd97dc786c7de9a3e2476cbf39\imagepipeline-base-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\670fb90127eac9fbf70852d29e2311cb\soloader-0.6.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.soloader:soloader:0.6.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\670fb90127eac9fbf70852d29e2311cb\soloader-0.6.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5ea45b2a23bd1a2ce96e29d0ba7ba6c\jetified-android-scalablevideoview-1.0.4\AndroidManifest.xml:8:5-10:41
+MERGED from [com.yqritc:android-scalablevideoview:1.0.4] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\c5ea45b2a23bd1a2ce96e29d0ba7ba6c\jetified-android-scalablevideoview-1.0.4\AndroidManifest.xml:8:5-10:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1b06e50d2e9d638ac4bc59e8d7c107d0\jetified-fbcore-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:2.0.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\1b06e50d2e9d638ac4bc59e8d7c107d0\jetified-fbcore-2.0.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\88945c83433c250ff87f43128bfb3567\jetified-installreferrer-1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\88945c83433c250ff87f43128bfb3567\jetified-installreferrer-1.0\AndroidManifest.xml:5:5-7:41
+INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml
+		INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml
+		INJECTED from D:\react-native\music-player\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:5:5-77
+ADDED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:5:5-77
 	android:name
-		ADDED from /Users/amusoftech/Downloads/music_player_design-master/android/app/src/debug/AndroidManifest.xml:5:22-75
+		ADDED from D:\react-native\music-player\android\app\src\debug\AndroidManifest.xml:5:22-75
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:react-native-fs] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-81
+ADDED from [:react-native-fs] D:\react-native\music-player\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
 	android:name
-		ADDED from [:react-native-fs] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-fs/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-78
+		ADDED from [:react-native-fs] D:\react-native\music-player\node_modules\react-native-fs\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-78
 service#com.tanguyantoine.react.MusicControlNotification$NotificationService
-ADDED from [:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-14:43
+ADDED from [:react-native-music-control] D:\react-native\music-player\node_modules\react-native-music-control\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-14:43
 	android:stopWithTask
-		ADDED from [:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-40
+		ADDED from [:react-native-music-control] D:\react-native\music-player\node_modules\react-native-music-control\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-40
 	android:name
-		ADDED from [:react-native-music-control] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-music-control/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-96
+		ADDED from [:react-native-music-control] D:\react-native\music-player\node_modules\react-native-music-control\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-96
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:5-68
+ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-68
 	android:name
-		ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:11:22-65
+		ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-65
 service#com.guichaguri.trackplayer.service.MusicService
-ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:9-24:19
+ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-24:19
 	android:enabled
-		ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-35
+		ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-35
 	android:exported
-		ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-36
+		ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-36
 	android:name
-		ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-75
+		ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-75
 intent-filter#action:name:android.intent.action.MEDIA_BUTTON
-ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-23:29
+ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-23:29
 action#android.intent.action.MEDIA_BUTTON
-ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-77
+ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:25-74
+		ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:25-74
 receiver#androidx.media.session.MediaButtonReceiver
-ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:9-31:20
+ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-31:20
 	android:name
-		ADDED from [:react-native-track-player] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-track-player/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:27:19-76
+		ADDED from [:react-native-track-player] D:\react-native\music-player\node_modules\react-native-track-player\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:19-76
 provider#com.reactnativecommunity.webview.RNCWebViewFileProvider
-ADDED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-20:20
+ADDED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-20:20
 	android:grantUriPermissions
-		ADDED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+		ADDED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-47
 	android:authorities
-		ADDED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-64
+		ADDED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-64
 	android:exported
-		ADDED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+		ADDED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
 	android:name
-		ADDED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-83
+		ADDED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-83
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-19:63
+ADDED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-19:63
 	android:resource
-		ADDED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-60
+		ADDED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:17-60
 	android:name
-		ADDED from [:react-native-webview] /Users/amusoftech/Downloads/music_player_design-master/node_modules/react-native-webview/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-67
+		ADDED from [:react-native-webview] D:\react-native\music-player\node_modules\react-native-webview\android\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-67
 activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:30:9-33:66
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:30:9-33:66
 	android:configChanges
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:32:13-96
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:32:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:33:13-63
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:33:13-63
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:31:13-57
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:31:13-57
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:34:9-71
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:34:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:34:19-68
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:34:19-68
 activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:35:9-49:20
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:35:9-49:20
 	tools:node
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:38:13-31
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:38:13-31
 	android:exported
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:37:13-36
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:37:13-36
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:36:13-58
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:36:13-58
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.${applicationId}+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:39:13-48:29
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:39:13-48:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.com.musicapp+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:39:13-48:29
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:39:13-48:29
 action#android.intent.action.VIEW
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:40:17-69
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:40:25-66
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:40:25-66
 category#android.intent.category.DEFAULT
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:42:17-76
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:42:17-76
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:42:27-73
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:42:27-73
 category#android.intent.category.BROWSABLE
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:43:17-78
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:43:17-78
 	android:name
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:43:27-75
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:43:27-75
 data
-ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:45:17-47:50
+ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:45:17-47:50
 	android:host
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:46:21-56
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:46:21-56
 	android:scheme
-		ADDED from [com.facebook.android:facebook-common:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/0768685ee1165403b581d6f73def04aa/facebook-common-7.1.0/AndroidManifest.xml:47:21-47
+		ADDED from [com.facebook.android:facebook-common:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\0768685ee1165403b581d6f73def04aa\facebook-common-7.1.0\AndroidManifest.xml:47:21-47
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
 service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
 	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
 	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
 	android:name
-		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+		ADDED from [com.google.android.gms:play-services-auth:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\a3cdb21535b886be81d7ed9246166568\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/ba2e793c1f9105015eca841ac8d335ce/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\ffa711bedce91a8bb455903c79c4f4ac\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\09f03dbe158c3b5286159fb3ae6d8c14\jetified-play-services-basement-16.0.1\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\09f03dbe158c3b5286159fb3ae6d8c14\jetified-play-services-basement-16.0.1\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/cba4761a9e5bb27d1fcfa8d22ac9819c/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\09f03dbe158c3b5286159fb3ae6d8c14\jetified-play-services-basement-16.0.1\AndroidManifest.xml:24:13-58
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:45:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:7.1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/a3483963b51743ea8709f27ae7d55a69/jetified-facebook-core-7.1.0/AndroidManifest.xml:48:25-92
+		ADDED from [com.facebook.android:facebook-core:7.1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\f3e67acb3fd3f1c3d712b707d200003b\jetified-facebook-core-7.1.0\AndroidManifest.xml:48:25-92
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.exoplayer:exoplayer-core:2.10.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d134e900a18f1646c3df0f281304b3b2/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:24:5-79
+ADDED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\006a0267f7677b2ffa583d8083e738f4\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:24:5-79
 	android:name
-		ADDED from [com.google.android.exoplayer:exoplayer-core:2.10.1] /private/var/root/.gradle/caches/transforms-2/files-2.1/d134e900a18f1646c3df0f281304b3b2/jetified-exoplayer-core-2.10.1/AndroidManifest.xml:24:22-76
+		ADDED from [com.google.android.exoplayer:exoplayer-core:2.10.1] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\006a0267f7677b2ffa583d8083e738f4\jetified-exoplayer-core-2.10.1\AndroidManifest.xml:24:22-76
 uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:9:5-110
+ADDED from [com.android.installreferrer:installreferrer:1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\88945c83433c250ff87f43128bfb3567\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
 	android:name
-		ADDED from [com.android.installreferrer:installreferrer:1.0] /private/var/root/.gradle/caches/transforms-2/files-2.1/89204c7612f7879a87aa2dde9d1518a1/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
+		ADDED from [com.android.installreferrer:installreferrer:1.0] C:\Users\admin\.gradle\caches\transforms-2\files-2.1\88945c83433c250ff87f43128bfb3567\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107

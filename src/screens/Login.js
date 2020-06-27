@@ -168,7 +168,7 @@ export default class MusicApp extends Component {
             let result = await response.json();
             // alert(JSON.stringify(result))
 
-            console.log('user=============')
+            console.log('user=============',result)
             if (result.status_code == 200) {
 
 
@@ -178,6 +178,8 @@ export default class MusicApp extends Component {
                         try {
                             await AsyncStorage.setItem('userID', JSON.stringify(response['data']['data']['user']['id']))
                             await AsyncStorage.setItem('userToken', JSON.stringify(response['data']['data']['token']['value']))
+                            console.log("User login ",response);
+                            
                             console.log('id============',(await AsyncStorage.getItem('userID')).toString())
                             console.log('tok============',(await AsyncStorage.getItem('userToken')).toString())
                         } catch (error) {
@@ -285,7 +287,7 @@ export default class MusicApp extends Component {
                         'userID': response['data']['data']['user']['id']
                     });
 
-                    LoginManager.logOut();
+                    // LoginManager.logOut();
                 }).catch((err) => {
                 if (!this.state.timeFlag) {
                     if (err.message == "Request failed with status code 401") {

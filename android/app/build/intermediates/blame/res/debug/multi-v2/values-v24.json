@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/amusoftech/Downloads/music_player_design-master/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "D:\\react-native\\music-player\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "/private/var/root/.gradle/caches/transforms-2/files-2.1/0b77bf4ae3b97af4a6f063e2282b31d9/media-1.1.0/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-2\\files-2.1\\0b77bf4ae3b97af4a6f063e2282b31d9\\media-1.1.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/private/var/root/.gradle/caches/transforms-2/files-2.1/a7a179574043accd65cf7a3978eaba12/appcompat-1.1.0/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-2\\files-2.1\\a7a179574043accd65cf7a3978eaba12\\appcompat-1.1.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import com.musicapp.BuildConfig;
 import com.musicapp.R;
 
+// @react-native-community/async-storage
+import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-community/google-signin
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
 // @react-native-community/masked-view
@@ -93,6 +95,7 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new AsyncStoragePackage(),
       new RNGoogleSigninPackage(),
       new RNCMaskedViewPackage(),
       new ReactSliderPackage(),

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/amusoftech/Downloads/music_player_design-master/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "D:\\react-native\\music-player\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/private/var/root/.gradle/caches/transforms-2/files-2.1/b2839deb0123fab1c26ac1aabf1a5bf2/jetified-play-services-auth-16.0.1/res/values-watch-v20/values.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-2\\files-2.1\\a3cdb21535b886be81d7ed9246166568\\jetified-play-services-auth-16.0.1\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/private/var/root/.gradle/caches/transforms-2/files-2.1/a7a179574043accd65cf7a3978eaba12/appcompat-1.1.0/res/values-watch-v20/values-watch-v20.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-2\\files-2.1\\a7a179574043accd65cf7a3978eaba12\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",

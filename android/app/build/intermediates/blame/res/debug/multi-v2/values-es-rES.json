@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/amusoftech/Downloads/music_player_design-master/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rES/values-es-rES.xml",
+            "outputFile": "D:\\react-native\\music-player\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rES\\values-es-rES.xml",
             "map": [
                 {
-                    "source": "/private/var/root/.gradle/caches/transforms-2/files-2.1/1ecd45e95cea99a5ecfa0ce994c77773/facebook-login-7.1.0/res/values-es-rES/values-es-rES.xml",
+                    "source": "C:\\Users\\admin\\.gradle\\caches\\transforms-2\\files-2.1\\1ecd45e95cea99a5ecfa0ce994c77773\\facebook-login-7.1.0\\res\\values-es-rES\\values-es-rES.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
