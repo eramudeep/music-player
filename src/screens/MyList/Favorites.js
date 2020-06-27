@@ -24,39 +24,51 @@ class Favorites extends Component {
             clickedThumb: '',
             playClicked: false,
             contentIDState: '',
-            sourcedata: '',
+            sourcedata: [],
         }
+        this.reRenderSomething = this.props.navigation.addListener(
+            "willFocus",
+            () => {
+               this.getData();
+            }
+          );
     }
 
 
 
     componentDidMount = async () => {
+       this.getData()
+    }
+    getData=async()=>{
+        console.log("gett");
+        
         AsyncStorage.getItem('userID').then((obj) => {
             this.props.FetchfavourContentsgenre(obj);
         })
+        console.log("this.props.animations.favorcontent",this.props.animations.favorcontent);
+        
         this.setState({
             backimage: url
         })
-        const { navigation } = this.props;
-        this.focusListener = navigation.addListener("didFocus", () => {
-            this.setState({ sourcedata: this.props.animations.favorcontent })
-        })
+        this.setState({ sourcedata: this.props.animations.favorcontent })
     }
-
     handleRemove = async (user_id, id) => {
-        await axios.get(BASE_PATH + '/api/favoriteRemove/' + user_id + '/' + id + '', {
+        
+        await axios.get(BASE_PATH + '/api/favoriteRemove/' + user_id + '/' + id, {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
             }
         })
             .then((response) => {
+                console.log("response",response);
+                
                 console.log('success-----------', response['data']['message'])
-                if (response['data']['message'] == 'added') {
-                    this.setState({ toggleHeart: true })
-                } else {
-                    this.setState({ toggleHeart: false })
-                }
+                if (response['data']['message'] === 'deleted') {
+                    console.log("has");
+                    var filtered = this.state.sourcedata.filter(function(el) { return el.id != id }); 
+                    this.setState({sourcedata:filtered})
+                } 
                 // this.props.FetchTopPlayed(genreID, user_id)
             }, (err) => {
                 console.log('============== fetch failed ===', err)
@@ -156,7 +168,6 @@ class Favorites extends Component {
                                 <Icon2 name="play" size={20} style={{ ...styles.menu, marginBottom: '-95%' }} color="red" />
                             </TouchableOpacity>
                         </View>
-
                     </ImageBackground>
                 </View>
                 <View style={styles.bottomArea}>

@@ -490,7 +490,6 @@ class Home extends Component {
         );
     }
 }
-
 const Hstyles = StyleSheet.create({
     container: {
         flex: 1,
