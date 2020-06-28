@@ -9,7 +9,7 @@ import Icon3 from 'react-native-vector-icons/FontAwesome';
 import BottomNavigation, { FullTab } from 'react-native-material-bottom-navigation';
 import Icon2 from 'react-native-vector-icons/FontAwesome5';
 import SearchBar from 'react-native-searchbar';
-import styles from '../style' 
+import styles from '../style'
 import { drawer } from "../navigators/AppNavigation";
 import NavigationService from '../navigators/NavigationService';
 import strings from '../strings';
@@ -33,7 +33,9 @@ class Home extends Component {
             englishData: '',
             turkeyData: '',
             kurdishData: '',
-            showHeader: true
+            showHeader: true,
+            genreData: [],
+            receiveData: []
         };
         this.offset = 0;
         this.onScroll = this.onScroll.bind(this);
@@ -59,6 +61,7 @@ class Home extends Component {
     }
 
     componentDidMount = async () => {
+        
         this.springValue.setValue(0.3);
         Animated.spring(
             this.springValue,
@@ -68,69 +71,117 @@ class Home extends Component {
             }
         ).start();
 
-        await AsyncStorage.setItem('userToken', this.props.navigation.getParam("Token"));
+        // await AsyncStorage.setItem('userToken', this.props.navigation.getParam("Token"));
         this.props.FetchIraqiTotalTopPlayed();
         this.props.FetchArabicTotalTopPlayed();
-        this.props.FetchArtist()
+        // this.props.FetchArtist()
 
-        // await this.props.FetchOtherArtist(2)
-        let response = await fetch(BASE_PATH + '/api/getOtherArtist/2', {
+        // await fetch(BASE_PATH + '/api/getGenre', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+        //     },
+        // }).then((res) => res.json())
+        //     .then(async (responseJSON) => {
+        //         let genreLegth = responseJSON['data']['content']
+        //         for (let i = 1; i <= genreLegth.length; i++) {
+        //             console.log(i)
+            console.log("start api");
+            
+        await fetch(BASE_PATH+'/api/getArtist', { 
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
             },
-        });
-        let iraqiResult = await response.json();
-
-        let engResponse = await fetch(BASE_PATH + '/api/getOtherArtist/3', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
-            },
-        });
-        let englishResult = await engResponse.json();
-
-        let turResponse = await fetch(BASE_PATH + '/api/getOtherArtist/4', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
-            },
-        });
-        let turkeyResult = await turResponse.json();
-
-        let kurResponse = await fetch(BASE_PATH + '/api/getOtherArtist/5', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
-            },
-        });
-        let kurdishResult = await kurResponse.json();
-
-        let othResponse = await fetch(BASE_PATH + '/api/getOtherArtist/6', {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
-            },
-        });
-        let othersResult = await othResponse.json();
-
-        this.setState({
-            iraqiData: iraqiResult['data']['content'],
-            englishData: englishResult['data']['content'],
-            turkeyData: turkeyResult['data']['content'],
-            kurdishData: kurdishResult['data']['content'],
-            othersData: othersResult['data']['content']
         })
-        console.log('=================this.state.iraqiData start===================');
-        console.log(this.state.iraqiData);
-        console.log('=================this.state.iraqiData END===================');
-        console.log('=================this.state.englishData start===================');
-        console.log(this.state.englishData);
+            .then((res) => res.json())
+            .then((responseJSON) => {
+                console.log('9999999999999999999999', responseJSON)
+                this.setState({ receiveData: responseJSON.data })
+            }).catch(err=>console.log("err",err)
+            )
+            console.log("end api");
+            // console.log(this.state.receiveData)
+        // console.log('eeeeeeeeeerewrewrew')
+        // console.log( MyResponse )
+        // console.log('eeeeeeeeee')
+
+        // this.setState({
+        //     iraqiData: response[1]['data']['content'],
+        //     // arabicData: response[2]['data']['content'],
+        //     englishData: response[3]['data']['content'],
+        //     turkeyData: response[4]['data']['content'],
+        //     kurdishData: response[5]['data']['content'],
+        //     othersData: response[6]['data']['content']
+        // })
+
+        // await this.props.FetchArtist(i)
+        // console.log('ssssssssssss', this.state.genreData[i - 1])
+        // console.log('aaaaaaaaaaaaaa', this.props.topPlayed.artist)
+
+        // this.setState({
+        //     genreData: JSON.stringify(responseJSON['data']['content'][0]['id'])
+        // });
+
+        // })
+        // .catch((err) => {
+        //     console.log('getGenre Error===', err)
+        // })
+
+        // let response = await fetch(BASE_PATH + '/api/getOtherArtist/2', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+        //     },
+        // });
+        // let iraqiResult = await response.json();
+
+        // let engResponse = await fetch(BASE_PATH + '/api/getOtherArtist/3', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+        //     },
+        // });
+        // let englishResult = await engResponse.json();
+
+        // let turResponse = await fetch(BASE_PATH + '/api/getOtherArtist/4', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+        //     },
+        // });
+        // let turkeyResult = await turResponse.json();
+
+        // let kurResponse = await fetch(BASE_PATH + '/api/getOtherArtist/5', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+        //     },
+        // });
+        // let kurdishResult = await kurResponse.json();
+
+        // let othResponse = await fetch(BASE_PATH + '/api/getOtherArtist/6', {
+        //     method: 'GET',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+        //     },
+        // });
+        // let othersResult = await othResponse.json();
+
+        // this.setState({
+        //     iraqiData: iraqiResult['data']['content'],
+        //     englishData: englishResult['data']['content'],
+        //     turkeyData: turkeyResult['data']['content'],
+        //     kurdishData: kurdishResult['data']['content'],
+        //     othersData: othersResult['data']['content']
+        // })
 
         StatusBar.setHidden(true);
         try {
@@ -153,7 +204,7 @@ class Home extends Component {
     }
 
     render() {
-        const { showHeader } = this.state;
+        const { showHeader, receiveData } = this.state;
         return (
 
             <View style={Hstyles.container}>
@@ -268,7 +319,7 @@ class Home extends Component {
 
                         </View>
 
-                        <View style={Hstyles.mostTrending}>
+                        {/* <View style={Hstyles.mostTrending}>
                             <Text style={Hstyles.subTitle}>{strings.iraqi}</Text>
                             <FlatList
                                 style={{ width: '100%', paddingBottom: 20, marginBottom: 10 }}
@@ -302,57 +353,117 @@ class Home extends Component {
                                 )}
                                 key={this.state.numColumns}
                             />
-                        </View>
+                        </View> */}
 
+                        {
+                            receiveData.map((data,key)=>{
+                                console.log("data",data);
+                                return(
+                                    <View style={Hstyles.mostTrending}>
+                                    {/* <Text style={Hstyles.subTitle}>{strings.arabic}</Text> */}
+                                    <FlatList
+                                        data={data ? data : []}
+                                        renderItem={({ item }) => (
+                                            <View style={{ paddingBottom: 5 }}>
+                                                <Text style={{ color: 'white' }}>{item['name']}</Text>
 
-
-                        <View style={Hstyles.mostTrending}>
-                            {/* <Text style={Hstyles.subTitle}>{strings.arabic}</Text> */}
-                            <FlatList
-                                data={this.props.topPlayed.artist ? this.props.topPlayed.artist : []}
-                                renderItem={({ item }) => (
-                                    <View style={{ paddingBottom: 5 }}>
-                                        <Text style={{ color: 'white' }}>{item['name']}</Text>
-
-                                        <FlatList
-                                            style={{ width: '100%', paddingBottom: 10, marginBottom: 10 }}
-                                            horizontal
-                                            showsHorizontalScrollIndicator={true}
-                                            initialNumToRender={10}
-                                            data={item["data"] ? item["data"] : []}
-                                            renderItem={({ item }) => (
-                                                <TouchableOpacity onPress={() => {
-                                                    console.log('ITEM  ================asdasda==', item)
-                                                    this.props.navigation.navigate('StageThree', {
-                                                        'artist_thumbnailURL': item['artist_photo'],
-                                                        'artist_name': item['artist_name'],
-                                                        'artist_id': item['artistID'],
-                                                        'genreID': item['genreID'],
-                                                        'previousScreen': 'Home',
-                                                    })
-                                                }} activeOpacity={0.6} >
-                                                    <View style={Hstyles.borderImageGroup}>
-                                                        <Image style={Hstyles.borderImage} source={{ uri: BASE_PATH + "/" + item['artist_thumbnailURL'] }} />
-                                                        <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
-                                                            <View style={Hstyles.imgAlbumNameArea2}>
-                                                                <Text style={Hstyles.imgAlbumName2} >{item['title']}</Text>
+                                                <FlatList
+                                                    style={{ width: '100%', paddingBottom: 10, marginBottom: 10 }}
+                                                    horizontal
+                                                    showsHorizontalScrollIndicator={true}
+                                                    initialNumToRender={10}
+                                                    data={item["data"] ? item["data"] : []}
+                                                    renderItem={({ item }) => (
+                                                        <TouchableOpacity onPress={() => {
+                                                            console.log('ITEM  ================asdasda==', item)
+                                                            this.props.navigation.navigate('StageThree', {
+                                                                'artist_thumbnailURL': item['artist_photo'],
+                                                                'artist_name': item['artist_name'],
+                                                                'artist_id': item['artistID'],
+                                                                'genreID': item['genreID'],
+                                                                'previousScreen': 'Home',
+                                                            })
+                                                        }} activeOpacity={0.6} >
+                                                            <View style={Hstyles.borderImageGroup}>
+                                                                <Image style={Hstyles.borderImage} source={{ uri: BASE_PATH + "/" + item['artist_thumbnailURL'] }} />
+                                                                <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
+                                                                    <View style={Hstyles.imgAlbumNameArea2}>
+                                                                        <Text style={Hstyles.imgAlbumName2} >{item['title']}</Text>
+                                                                    </View>
+                                                                    <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
+                                                                </View>
+                                                                <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(78,75,102,0.4)', 'rgb(78,75,102)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 60 }} />
                                                             </View>
-                                                            <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
-                                                        </View>
-                                                        <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(78,75,102,0.4)', 'rgb(78,75,102)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 60 }} />
-                                                    </View>
 
-                                                </TouchableOpacity>
-                                            )}
-                                            keyExtractor={item => item.id}
-                                        />
-                                    </View>
-                                )}
-                            />
-                        </View>
+                                                        </TouchableOpacity>
+                                                    )}
+                                                    keyExtractor={item => item.id}
+                                                />
+                                            </View>
+                                        )}
+                                    />
+                                </View>
+                                )
+                                
+                            })
+                        }
+                        {
+                            receiveData.forEach((BigItem) => {
+                                // console.log('777777777777777', BigItem);
+                                // console.log('000000000000000', receiveData);
 
+
+                                <View style={Hstyles.mostTrending}>
+                                    <Text style={Hstyles.subTitle}>{strings.arabic}</Text>
+                                    <FlatList
+                                        data={BigItem ? BigItem : []}
+                                        renderItem={({ item }) => (
+                                            <View style={{ paddingBottom: 5 }}>
+                                                <Text style={{ color: 'white' }}>{item['name']}</Text>
+
+                                                <FlatList
+                                                    style={{ width: '100%', paddingBottom: 10, marginBottom: 10 }}
+                                                    horizontal
+                                                    showsHorizontalScrollIndicator={true}
+                                                    initialNumToRender={10}
+                                                    data={item["data"] ? item["data"] : []}
+                                                    renderItem={({ item }) => (
+                                                        <TouchableOpacity onPress={() => {
+                                                            console.log('ITEM  ================asdasda==', item)
+                                                            this.props.navigation.navigate('StageThree', {
+                                                                'artist_thumbnailURL': item['artist_photo'],
+                                                                'artist_name': item['artist_name'],
+                                                                'artist_id': item['artistID'],
+                                                                'genreID': item['genreID'],
+                                                                'previousScreen': 'Home',
+                                                            })
+                                                        }} activeOpacity={0.6} >
+                                                            <View style={Hstyles.borderImageGroup}>
+                                                                <Image style={Hstyles.borderImage} source={{ uri: BASE_PATH + "/" + item['artist_thumbnailURL'] }} />
+                                                                <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
+                                                                    <View style={Hstyles.imgAlbumNameArea2}>
+                                                                        <Text style={Hstyles.imgAlbumName2} >{item['title']}</Text>
+                                                                    </View>
+                                                                    <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
+                                                                </View>
+                                                                <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(78,75,102,0.4)', 'rgb(78,75,102)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 60 }} />
+                                                            </View>
+
+                                                        </TouchableOpacity>
+                                                    )}
+                                                    keyExtractor={item => item.id}
+                                                />
+                                            </View>
+                                        )}
+                                    />
+                                </View>
+
+                            })
+                        }
+
+{/* 
                         <View style={Hstyles.mostTrending}>
-                            {/* <Text style={Hstyles.subTitle}>{strings.english}</Text> */}
+                            <Text style={Hstyles.subTitle}>{strings.english}</Text>
                             <FlatList
                                 style={{ width: '100%', paddingBottom: 20, marginBottom: 10 }}
                                 showsHorizontalScrollIndicator={true}
@@ -385,7 +496,7 @@ class Home extends Component {
                             />
                         </View>
                         <View style={Hstyles.mostTrending}>
-                            {/* <Text style={Hstyles.subTitle}>{strings.turkey}</Text> */}
+                            <Text style={Hstyles.subTitle}>{strings.turkey}</Text>
                             <FlatList
                                 style={{ width: '100%', paddingBottom: 20, marginBottom: 10 }}
                                 showsHorizontalScrollIndicator={true}
@@ -417,7 +528,7 @@ class Home extends Component {
                             />
                         </View>
                         <View style={Hstyles.mostTrending}>
-                            {/* <Text style={Hstyles.subTitle}>{strings.kurdish}</Text> */}
+                            <Text style={Hstyles.subTitle}>{strings.kurdish}</Text>
                             <FlatList
                                 style={{ width: '100%', paddingBottom: 20, marginBottom: 10 }}
                                 showsHorizontalScrollIndicator={true}
@@ -451,7 +562,7 @@ class Home extends Component {
                             />
                         </View>
                         <View style={Hstyles.mostTrending}>
-                            {/* <Text style={Hstyles.subTitle}>{strings.others}</Text> */}
+                            <Text style={Hstyles.subTitle}>{strings.others}</Text>
                             <FlatList
                                 style={{ width: '100%', paddingBottom: 20, marginBottom: 10 }}
                                 showsHorizontalScrollIndicator={true}
@@ -483,6 +594,7 @@ class Home extends Component {
                                 key={this.state.numColumns}
                             />
                         </View>
+                     */}
                     </SafeAreaView>
                 </ScrollView>
             </View>
