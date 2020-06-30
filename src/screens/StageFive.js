@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, TouchableWithoutFeedback, TouchableOpacity, Text, Dimensions, ScrollView, Image, AsyncStorage, FlatList } from 'react-native';
+import { View, StyleSheet, TouchableWithoutFeedback, TouchableOpacity, Text, Dimensions, ScrollView, Image, FlatList } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Icon2 from 'react-native-vector-icons/MaterialIcons';
 import { drawer } from "../navigators/AppNavigation";
@@ -21,7 +21,7 @@ import Modal, {
     ScaleAnimation,
 } from 'react-native-modals';
 import { BASE_PATH } from '../api/config';
-
+import AsyncStorage from '@react-native-community/async-storage';
 
 const { width, height } = Dimensions.get('window');
 
@@ -64,7 +64,7 @@ class StageFive extends Component {
 
     async componentWillMount() {
 
-        await AsyncStorage.setItem('userToken', this.props.navigation.getParam("Token"));
+        // await AsyncStorage.setItem('userToken', this.props.navigation.getParam("Token"));
         AsyncStorage.getItem('data', (err, result) => {
             this.setState({ sourcedata: JSON.parse(result) })
         });
@@ -141,16 +141,15 @@ class StageFive extends Component {
 
         // this.props.FetchTopPlayed(genType)
 
-        if ((await AsyncStorage.getItem("languageCode")).toString() == 'ar') {
-            this.setState({
-                currentLang: 'ar'
-            })
-        } else {
+        if ((await AsyncStorage.getItem("languageCode")).toString() == 'en') {
             this.setState({
                 currentLang: 'en'
             })
+        } else {
+            this.setState({
+                currentLang: 'ar'
+            })
         }
-
 
     }
 
@@ -232,10 +231,11 @@ class StageFive extends Component {
     }
 
     updateRegCount = async (userID, contentID) => {
+        let  token =await AsyncStorage.getItem("userToken") 
         axios.get( BASE_PATH +'/api/updateRegCount/' + userID + '/' + contentID + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+                'Authorization': 'bearer ' + token.replace(/['"]+/g, '')
             }
         })
             .then((response) => {
@@ -246,10 +246,11 @@ class StageFive extends Component {
     }
 
     updateDownCount = async (contentID) => {
+        let  token =await AsyncStorage.getItem("userToken") 
         axios.get( BASE_PATH + '/api/updateDownCount/' + contentID + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+                'Authorization': 'bearer ' + token.replace(/['"]+/g, '')
             }
         })
             .then((response) => {
@@ -260,10 +261,11 @@ class StageFive extends Component {
     }
 
     markHeart = async (user_id, id) => {
+        let  token =await AsyncStorage.getItem("userToken") 
         axios.get( BASE_PATH + '/api/markHeart/' + user_id + '/' + id + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+                'Authorization': 'bearer ' + token.replace(/['"]+/g, '')
             }
         })
             .then((response) => {

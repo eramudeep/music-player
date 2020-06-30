@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
     View, StyleSheet, ScrollView, SafeAreaView, FlatList, Text, TouchableOpacity,
-    TouchableWithoutFeedback, Image, StatusBar, AsyncStorage, Dimensions, Animated
+    TouchableWithoutFeedback, Image, StatusBar, Dimensions, Animated
 } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import Ionicons from 'react-native-vector-icons/Ionicons'
@@ -20,6 +20,7 @@ import { FetchIraqiTotalTopPlayed, FetchArabicTotalTopPlayed, FetchOtherArtist, 
 import config, { BASE_PATH } from '../api/config'
 import { colorsArray } from '../constants/randomColor'
 import HeaderHome from '../components/HeaderHome';
+import AsyncStorage from '@react-native-community/async-storage';
 //done pasting ok
 const { width, height } = Dimensions.get('window')
 const topImage = require('../assets/images/topImage.jpg')
@@ -88,12 +89,12 @@ class Home extends Component {
         //         for (let i = 1; i <= genreLegth.length; i++) {
         //             console.log(i)
             console.log("start api");
-            
+            let  token =await AsyncStorage.getItem("userToken")            
         await fetch(BASE_PATH+'/api/getArtist', { 
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+                'Authorization': `bearer ${token.replace(/['"]+/g, '')}`
             },
         })
             .then((res) => res.json())
@@ -355,7 +356,7 @@ class Home extends Component {
                             />
                         </View> */}
 
-                        {
+                        {receiveData &&
                             receiveData.map((data,key)=>{
                                 console.log("data",data);
                                 return(
@@ -407,7 +408,7 @@ class Home extends Component {
                                 
                             })
                         }
-                        {
+                        {receiveData &&
                             receiveData.forEach((BigItem) => {
                                 // console.log('777777777777777', BigItem);
                                 // console.log('000000000000000', receiveData);
@@ -656,7 +657,7 @@ const Hstyles = StyleSheet.create({
         width: width * 0.25,
         height: width * 0.3,
         resizeMode: 'cover',
-    },
+    }, 
 })
 
 const mapStateToProps = (state) => {

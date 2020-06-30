@@ -1,5 +1,4 @@
 import React, { Component, createRef, useState, useEffect } from 'react';
-import { View, AsyncStorage } from 'react-native';
 import { createStackNavigator } from 'react-navigation-stack';
 import ScalingDrawer from 'react-native-scaling-drawer';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
@@ -34,14 +33,14 @@ import StageTwo from '../screens/StageTwo';
 import StageThree from '../screens/StageThree';
 import StageFour from '../screens/StageFour';
 import StageFive from '../screens/StageFive';
-
+import AsyncStorage from '@react-native-community/async-storage';
 const string = AsyncStorage.getItem("languageCode").then((value) => {
-    if (value == 'ar') {
-        strings.setLanguage('ar');
+    if (value == 'en') {
+        strings.setLanguage('en');
         return strings;
     }
     else {
-        strings.setLanguage('en');
+        strings.setLanguage('ar');
         return strings;
     }
 });
@@ -211,17 +210,17 @@ export default class AppNavigation extends Component {
                 swipeOffset: 20,
                 minimizeFactor: 0.7
             },
-            lan: '',
+            lan: 'ar',
             count: 1,
         };
     }
 
     async componentWillMount() {
-        if ((await AsyncStorage.getItem("languageCode")).toString() == 'ar') {
+        if ((await AsyncStorage.getItem("languageCode")).toString() == 'en') {
             strings.setLanguage('ar')
         }
         else {
-            strings.setLanguage('en')
+            strings.setLanguage('ar')
         }
         const { navigation } = this.props;
         this.focusListener = navigation.addListener('didFocus', () => {

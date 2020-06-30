@@ -102,8 +102,8 @@ export default class MusicApp extends Component {
     async UNSAFE_componentWillMount() {
         // let langCode = await AsyncStorage.getItem('languageCode')
         // await languageSwitcher.switchTo(langCode);
-        if ((await AsyncStorage.getItem("languageCode")).toString() == 'ar') {
-            strings.setLanguage('ar')
+        if ((await AsyncStorage.getItem("languageCode")).toString() == 'en') {
+            strings.setLanguage('en')
             this.setState({
                 phoneplaceholder: strings.phone + ':',
                 emailplaceholder: strings.email + ':',
@@ -111,7 +111,7 @@ export default class MusicApp extends Component {
             })
         }
         else {
-            strings.setLanguage('en')
+            strings.setLanguage('ar')
             this.setState({
                 phoneplaceholder: strings.phone + ':',
                 emailplaceholder: strings.email + ':',

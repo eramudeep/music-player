@@ -30,19 +30,17 @@ export default class FavourVideoPlayer extends Component {
   }
 
   async componentDidMount() {
-    if ((await AsyncStorage.getItem("languageCode")).toString() == 'ar') {
+    if ((await AsyncStorage.getItem("languageCode")).toString() == 'en') {
       this.setState({
-        currentLang: 'ar'
+        currentLang: 'en'
       })
       StatusBar.setHidden(true)
     } else {
       this.setState({
-        currentLang: 'en'
+        currentLang: 'ar'
       })
     }
   }
-
-  
   handleMainButtonTouch = () => {
     if (this.state.progress >= 0.99) {
       this.VideoPlayer.seek(0);

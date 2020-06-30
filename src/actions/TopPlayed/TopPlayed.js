@@ -75,7 +75,7 @@ export const FetchTotalTopPlayed = () => (
         }, (err) => {
             console.log(err)
         })
-    }
+    } 
 )
 
 export const FetchIraqiTotalTopPlayed = () => (
