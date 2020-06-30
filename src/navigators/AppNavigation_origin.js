@@ -31,12 +31,12 @@ import StageFour from '../screens/StageFour';
 import StageFive from '../screens/StageFive';
 
 const string = AsyncStorage.getItem("languageCode").then((value) => {
-  if (value == 'ar') {
-    strings.setLanguage('ar');
+  if (value == 'en') {
+    strings.setLanguage('en');
     return strings;
   }
   else {
-    strings.setLanguage('en');
+    strings.setLanguage('ar');
     return strings;
   }
 });

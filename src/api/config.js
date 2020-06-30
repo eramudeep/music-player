@@ -1,4 +1,4 @@
-export const BASE_PATH = 'http://192.168.225.190:8000' //'http://192.168.110.249:8000'
+export const BASE_PATH ='http://192.168.225.190:8000' //'http://192.168.110.249:8000'"https://metrend.net:8000" // 
 export default {
   auth: {
     login: BASE_PATH + '/api/users/login'

@@ -36,11 +36,11 @@ export default class MusicApp extends Component {
     // }
 
     async componentWillMount() {
-        if ((await AsyncStorage.getItem("languageCode")).toString() == 'ar') {
-            strings.setLanguage('ar')
+        if ((await AsyncStorage.getItem("languageCode")).toString() == 'en') {
+            strings.setLanguage('en')
         }
         else {
-            strings.setLanguage('en')
+            strings.setLanguage('ar')
         }
     }
 

@@ -34,14 +34,14 @@ export default class VideoPlayer extends Component {
     this.setState({
       clicked: this.props.navigation.getParam('clicked')
     })
-    if ((await AsyncStorage.getItem("languageCode")).toString() == 'ar') {
+    if ((await AsyncStorage.getItem("languageCode")).toString() == 'en') {
       this.setState({
-        currentLang: 'ar'
+        currentLang: 'en'
       })
       StatusBar.setHidden(true)
     } else {
       this.setState({
-        currentLang: 'en'
+        currentLang: 'ar'
       })
     }
   }

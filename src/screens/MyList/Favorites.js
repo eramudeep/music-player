@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ImageBackground, TextInput, TouchableOpacity, ScrollView, Image, FlatList, AsyncStorage } from 'react-native';
+import { View, Text, ImageBackground, TextInput, TouchableOpacity, ScrollView, Image, FlatList, } from 'react-native';
 import Icon2 from 'react-native-vector-icons/FontAwesome5';
 import styles from '../../style';
 import LinearGradient from 'react-native-linear-gradient';
@@ -10,7 +10,7 @@ import Icon from 'react-native-vector-icons/AntDesign';
 import { BASE_PATH } from '../../../src/api/config'
 import axios from 'axios'
 import Modal, { ModalContent } from 'react-native-modals';
-
+import AsyncStorage from '@react-native-community/async-storage';
 const url = require('../../assets/images/favorite.png')
 
 class Favorites extends Component {
@@ -53,11 +53,11 @@ class Favorites extends Component {
         this.setState({ sourcedata: this.props.animations.favorcontent })
     }
     handleRemove = async (user_id, id) => {
-        
+        let  token =await AsyncStorage.getItem("userToken")  
         await axios.get(BASE_PATH + '/api/favoriteRemove/' + user_id + '/' + id, {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
-                'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+                'Authorization': 'bearer ' + token.replace(/['"]+/g, '')
             }
         })
             .then((response) => {

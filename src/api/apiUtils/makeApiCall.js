@@ -1,13 +1,12 @@
 import axios from 'axios';
-import { AsyncStorage } from 'react-native';
-
+import AsyncStorage from '@react-native-community/async-storage';
 
 export default {
-    
     async makeGetRequest(path, callback, fail) {
+      let token =await AsyncStorage.getItem('userToken')
     axios.get(path, {  headers: {
           'Content-Type': 'application/json;charset=utf-8',
-          'Authorization':'bearer '+  (await AsyncStorage.getItem('userToken')).toString()   
+          'Authorization':'bearer '+ token.replace(/['"]+/g, '')
        }}) 
       .then(callback)
       .catch(fail)
@@ -24,16 +23,18 @@ export default {
 
   },
   async makeDeleteRequest(path, callback, fail) {
+    let token =await AsyncStorage.getItem('userToken')
     axios.delete(path, { withCredentials: true, headers: {
-      Authorization:'Bearer '+ (await AsyncStorage.getItem('userToken')).toString()  
+      Authorization:'Bearer '+ token.replace(/['"]+/g, '')  
     }}) 
       .then(callback)
       .catch(fail)
   },
   async makePutRequest(path, callback, fail, payload, params) {
+    let token =await AsyncStorage.getItem('userToken')
     path += serializeQueryParams(params)
     axios.put(path, payload, { withCredentials: true, headers: {
-      Authorization:'Bearer '+ (await AsyncStorage.getItem('userToken')).toString()  
+      Authorization:'Bearer '+ token.replace(/['"]+/g, '')  
     }}) 
       .then(callback)
       .catch(fail)
