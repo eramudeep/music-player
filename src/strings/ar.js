@@ -236,5 +236,8 @@ export default ar = {
     forgotpwd: 'هل نسيت كلمة المرور؟',
     mosttrending: 'الأكثر رواجًا',
     arabicmosttrending: 'العربي الأكثر رواجا',
-    iraqimosttrending: 'العراقي الأكثر رواجا'
+    iraqimosttrending: 'العراقي الأكثر رواجا',
+    audio: 'صوت',
+    video: 'فيديو',
+    emptysearch: 'يرجى كتابة اسم الأغنية ، اسم الألبوم ، اسم الفنان الذي تريد البحث عنه'
   };

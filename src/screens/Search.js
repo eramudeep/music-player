@@ -21,6 +21,7 @@ import {
     UIActivityIndicator,
     WaveIndicator,
 } from 'react-native-indicators';
+import { BASE_PATH } from '../api/config';
 
 const { width, height } = Dimensions.get('window')
 
@@ -47,7 +48,6 @@ class Search extends Component {
             artist_name: '',
             album_name: '',
             loading: true,
-
             dataSource: '',
             dataSource2: '',
             dataSource3: '',
@@ -56,12 +56,6 @@ class Search extends Component {
 
     componentDidMount = async () => {
         await this.props.FetchTotalTopPlayed();
-        // //If data is too much
-        // if (this.props.topPlayed) {
-        //     this.setState({
-        //         loading: false
-        //     })
-        // }
         setTimeout(() => {
             this.stopLoading()
         }, 1500);
@@ -138,7 +132,7 @@ class Search extends Component {
                         <View style={styles.srhInputArea1}>
                             <TextInput
                                 style={styles.srhInput1}
-                                placeholder="Search..."
+                                placeholder={strings.search}
                                 placeholderTextColor={Colors.searchIcon}
                                 onChangeText={
                                     async (text) => {
@@ -181,13 +175,13 @@ class Search extends Component {
                     </View>
                     <View style={styles.searchBtn}>
                         <TouchableOpacity style={this.state.changeItem == 'SongName' ? styles.searchBtnItem : styles.searchBtnItem1} onPress={() => { this.setState({ changeItem: 'SongName' }) }}>
-                            <Text style={this.state.changeItem == 'SongName'? styles.activeTxt:styles.inactiveTxt}>{strings.songname}</Text>
+                            <Text style={this.state.changeItem == 'SongName' ? styles.activeTxt : styles.inactiveTxt}>{strings.songname}</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={this.state.changeItem == 'AlbumName' ? styles.searchBtnItem : styles.searchBtnItem1} onPress={() => { this.setState({ changeItem: 'AlbumName' }) }}>
-                            <Text style={this.state.changeItem == 'AlbumName'? styles.activeTxt:styles.inactiveTxt}>{strings.albumname}</Text>
+                            <Text style={this.state.changeItem == 'AlbumName' ? styles.activeTxt : styles.inactiveTxt}>{strings.albumname}</Text>
                         </TouchableOpacity>
                         <TouchableOpacity style={this.state.changeItem == 'ArtistName' ? styles.searchBtnItem : styles.searchBtnItem1} onPress={() => { this.setState({ changeItem: 'ArtistName' }) }}>
-                            <Text style={this.state.changeItem == 'ArtistName'? styles.activeTxt:styles.inactiveTxt}>{strings.artistname}</Text>
+                            <Text style={this.state.changeItem == 'ArtistName' ? styles.activeTxt : styles.inactiveTxt}>{strings.artistname}</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -197,70 +191,8 @@ class Search extends Component {
                     {
                         this.state.search == "" &&
 
-                        // <FlatList
-                        //     style={{ paddingBottom: 280, flexGrow: 0 }}
-                        //     initialNumToRender={10}
-                        //     data={this.props.topPlayed ? this.props.topPlayed : []}
-                        //     numColumns={3}
-                        //     renderItem={({ item }) => (
-                        //         <TouchableOpacity onPress={() => {
-                        //             // alert(JSON.stringify(item))
-                        //             this.props.navigation.navigate('StageFour', {
-                        //                 'genreID': item['genreID'],
-                        //                 'thumbnailURL': item['thumbnailURL'],
-                        //                 'title': item['title'],
-                        //                 'type': item['type'],
-                        //                 'contentURL': item['contentURL'],
-                        //                 'artistID': item['artistID'],
-                        //                 'totalItem': item,
-                        //                 'desc_long': item['desc_long'],
-                        //                 'albumID': item['albumID'],
-                        //                 'contentID': item['id']
-                        //             })
-                        //         }} activeOpacity={0.6} style={{ marginBottom: 10, }} >
-                        //             <View style={SearchStyles.borderImageGroup}>
-                        //                 <TouchableOpacity style={SearchStyles.belowPlay} onPress={async () => {
-                        //                     await this.setState({
-                        //                         clickedSource: item['contentURL'],
-                        //                         clicked: item,
-                        //                         clickedThumb: item['thumbnailURL'],
-                        //                         clickedType: item['type'],
-                        //                     })
-                        //                     this.state.clickedType == '0' ? (
-                        //                         this.props.navigation.navigate('VideoPlayer',
-                        //                             {
-                        //                                 'clicked': this.state.clicked,
-                        //                                 'clickedSource': this.state.clickedSource,
-                        //                             }
-                        //                         )
-                        //                     ) :
-                        //                         this.props.navigation.navigate('MusicPlayer',
-                        //                             {
-                        //                                 'clicked': this.state.clicked,
-                        //                                 'clickedSource': this.state.clickedSource,
-                        //                                 'clickedThumb': this.state.clickedThumb
-                        //                             }
-                        //                         )
-                        //                 }}>
-                        //                     <Icon name="play" size={25} color="#fff" />
-                        //                 </TouchableOpacity>
-                        //                 <Image style={SearchStyles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
-                        //                 <View style={{ position: 'absolute', bottom: 0, width: width * 0.25, height: 75, zIndex: 100 }}>
-                        //                     <View style={SearchStyles.imgAlbumNameArea2}>
-                        //                         <Text style={SearchStyles.imgAlbumName2} >{item['title']}</Text>
-                        //                     </View>
-                        //                     <Text style={SearchStyles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
-                        //                 </View>
-                        //                 <LinearGradient colors={['rgba(58,55,82,0.7)', 'rgba(140,140,177,0.3)', '#00000000', 'rgba(140,140,177,0.3)', 'rgba(89,85,125,0.9)', 'rgb(58,55,82)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: '100%', borderRadius: 15 }} />
-                        //             </View>
-
-                        //         </TouchableOpacity>
-                        //     )}
-                        //     keyExtractor={item => item.id}
-                        // />
-                        <View style={{justifyContent: 'center', alignItems: "center", height: height*0.5}}>
-                            <Text style={{color: 'white'}}>Please type song name, album name, artist name </Text>
-                            <Text style={{color: 'white'}}> you want to search</Text>
+                        <View style={{ justifyContent: 'center', alignItems: "center", height: height * 0.5 }}>
+                            <Text style={{ color: 'white' }}>{strings.emptysearch}</Text>
                         </View>
                     }
                     {
@@ -313,7 +245,7 @@ class Search extends Component {
                                         }}>
                                             <Icon name="play" size={25} color="#fff" />
                                         </TouchableOpacity>
-                                        <Image style={SearchStyles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
+                                        <Image style={SearchStyles.borderImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
                                         <View style={{ position: 'absolute', bottom: 0, width: width * 0.25, height: 75, zIndex: 100 }}>
                                             <View style={SearchStyles.imgAlbumNameArea2}>
                                                 <Text style={SearchStyles.imgAlbumName2} >{item['title']}</Text>
@@ -379,7 +311,7 @@ class Search extends Component {
                                         }}>
                                             <Icon name="play" size={25} color="#fff" />
                                         </TouchableOpacity>
-                                        <Image style={SearchStyles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
+                                        <Image style={SearchStyles.borderImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
                                         <View style={{ position: 'absolute', bottom: 0, width: width * 0.25, height: 75, zIndex: 100 }}>
                                             <View style={SearchStyles.imgAlbumNameArea2}>
                                                 <Text style={SearchStyles.imgAlbumName2} >{item['title']}</Text>
@@ -446,7 +378,7 @@ class Search extends Component {
                                         }}>
                                             <Icon name="play" size={25} color="#fff" />
                                         </TouchableOpacity>
-                                        <Image style={SearchStyles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
+                                        <Image style={SearchStyles.borderImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
                                         <View style={{ position: 'absolute', bottom: 0, width: width * 0.25, height: 75, zIndex: 100 }}>
                                             <View style={SearchStyles.imgAlbumNameArea2}>
                                                 <Text style={SearchStyles.imgAlbumName2} >{item['title']}</Text>

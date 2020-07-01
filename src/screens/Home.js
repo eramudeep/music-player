@@ -36,7 +36,8 @@ class Home extends Component {
             kurdishData: '',
             showHeader: true,
             genreData: [],
-            receiveData: []
+            receiveData: [],
+            lang: ''
         };
         this.offset = 0;
         this.onScroll = this.onScroll.bind(this);
@@ -62,7 +63,6 @@ class Home extends Component {
     }
 
     componentDidMount = async () => {
-        
         this.springValue.setValue(0.3);
         Animated.spring(
             this.springValue,
@@ -71,6 +71,7 @@ class Home extends Component {
                 friction: 0.6
             }
         ).start();
+        await AsyncStorage.getItem('languageCode').then((obj) => { this.setState({ lang: obj }) })
 
         // await AsyncStorage.setItem('userToken', this.props.navigation.getParam("Token"));
         this.props.FetchIraqiTotalTopPlayed();
@@ -184,18 +185,17 @@ class Home extends Component {
         //     othersData: othersResult['data']['content']
         // })
 
-        StatusBar.setHidden(true);
-        try {
-            const userID = await AsyncStorage.getItem('userID')
-            console.log('value------------------', userID)
-        } catch (e) {
-            // read error
-        }
-        console.log('================= START ===================');
-        await AsyncStorage.getItem("languageCode").then((obj) => (
-            console.log('obj====================', obj)
-        ))
-        console.log('================= END   ===================');
+        // try {
+        //     const userID = await AsyncStorage.getItem('userID')
+        //     console.log('value------------------', userID)
+        // } catch (e) {
+        //     // read error
+        // }
+        // console.log('================= START ===================');
+        // await AsyncStorage.getItem("languageCode").then((obj) => (
+        //     console.log('obj====================', obj)
+        // ))
+        // console.log('================= END   ===================');
     }
 
     getRandomColor = () => colorsArray[Math.floor(Math.random() * colorsArray.length)]
@@ -218,10 +218,14 @@ class Home extends Component {
                     <SafeAreaView style={{ flex: 1 }}>
                         <View style={{ borderWidth: 1 }}>
                             <Image source={topImage} style={{ width: '100%', height: height * 0.65 }} />
-                            <Animated.Image
+                            <Image
+                                source={logoImage}
+                                style={{ position: 'absolute', width: '50%', top: 0, alignSelf: "center", resizeMode: 'contain' }}
+                            />
+                            {/* <Animated.Image
                                 source={logoImage}
                                 style={{ transform: [{ scale: this.springValue }], position: 'absolute', width: '50%', top: 0, alignSelf: "center", resizeMode: 'contain' }}
-                            />
+                            /> */}
                         </View>
                         <View style={{ flexDirection: "row", justifyContent: 'space-between' }}>
                             <TouchableOpacity style={{ width: 100, marginTop: -70, alignItems: "center", zIndex: 1000 }} onPress={() => this.props.navigation.navigate('MyList')}>
@@ -257,7 +261,9 @@ class Home extends Component {
                                             'artist_id': item['artistID'],
                                             'genreID': item['genreID'],
                                             'title': item['title'],
+                                            'ar_title': item['ar_title'],
                                             'album_name': item['album_name'],
+                                            'ar_album_name': item['ar_album_name'],
                                             'type': item['type'],
                                             'contentURL': item['contentURL'],
                                             'totalItem': item
@@ -267,9 +273,9 @@ class Home extends Component {
                                             <Image style={{ width: 90, height: 90, borderRadius: 45, borderColor: this.getRandomColor(), borderWidth: 2 }} source={{ uri: BASE_PATH + '/' + item['thumbnailURL'] }} />
                                             <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
                                                 <View style={Hstyles.imgAlbumNameArea2}>
-                                                    <Text style={Hstyles.imgAlbumName2} >{item['title']}</Text>
+                                                    <Text style={Hstyles.imgAlbumName2} >{this.state.lang == 'en' ? item['title'] : item['ar_title']}</Text>
                                                 </View>
-                                                <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
+                                                <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? strings.audio : strings.video}</Text>
                                             </View>
                                             <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(78,75,102,0.4)', 'rgb(78,75,102)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 90, borderRadius: 45 }} />
                                         </View>
@@ -307,9 +313,9 @@ class Home extends Component {
                                             <Image style={{ width: 90, height: 90, borderRadius: 45, borderColor: this.getRandomColor(), borderWidth: 2 }} source={{ uri: BASE_PATH + '/' + item['thumbnailURL'] }} />
                                             <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
                                                 <View style={Hstyles.imgAlbumNameArea2}>
-                                                    <Text style={Hstyles.imgAlbumName2} >{item['title']}</Text>
+                                                    <Text style={Hstyles.imgAlbumName2} >{this.state.lang == 'en' ? item['title'] : item['ar_title']}</Text>
                                                 </View>
-                                                <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
+                                                <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? strings.audio : strings.video}</Text>
                                             </View>
                                             <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(78,75,102,0.4)', 'rgb(78,75,102)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 90, borderRadius: 45 }} />
                                         </View>
@@ -366,7 +372,7 @@ class Home extends Component {
                                         data={data ? data : []}
                                         renderItem={({ item }) => (
                                             <View style={{ paddingBottom: 5 }}>
-                                                <Text style={{ color: 'white' }}>{item['name']}</Text>
+                                                <Text style={{ color: 'white' }}>{this.state.lang == 'en' ? item['name'] : item['ar_name']}</Text>
 
                                                 <FlatList
                                                     style={{ width: '100%', paddingBottom: 10, marginBottom: 10 }}
@@ -389,9 +395,9 @@ class Home extends Component {
                                                                 <Image style={Hstyles.borderImage} source={{ uri: BASE_PATH + "/" + item['artist_thumbnailURL'] }} />
                                                                 <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
                                                                     <View style={Hstyles.imgAlbumNameArea2}>
-                                                                        <Text style={Hstyles.imgAlbumName2} >{item['title']}</Text>
+                                                                        <Text style={Hstyles.imgAlbumName2} >{this.state.lang == 'en' ? item['title'] : item['ar_title']}</Text>
                                                                     </View>
-                                                                    <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
+                                                                    <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? strings.audio : strings.video}</Text>
                                                                 </View>
                                                                 <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(78,75,102,0.4)', 'rgb(78,75,102)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 60 }} />
                                                             </View>
@@ -408,61 +414,9 @@ class Home extends Component {
                                 
                             })
                         }
-                        {receiveData &&
-                            receiveData.forEach((BigItem) => {
-                                // console.log('777777777777777', BigItem);
-                                // console.log('000000000000000', receiveData);
+                        
 
-
-                                <View style={Hstyles.mostTrending}>
-                                    <Text style={Hstyles.subTitle}>{strings.arabic}</Text>
-                                    <FlatList
-                                        data={BigItem ? BigItem : []}
-                                        renderItem={({ item }) => (
-                                            <View style={{ paddingBottom: 5 }}>
-                                                <Text style={{ color: 'white' }}>{item['name']}</Text>
-
-                                                <FlatList
-                                                    style={{ width: '100%', paddingBottom: 10, marginBottom: 10 }}
-                                                    horizontal
-                                                    showsHorizontalScrollIndicator={true}
-                                                    initialNumToRender={10}
-                                                    data={item["data"] ? item["data"] : []}
-                                                    renderItem={({ item }) => (
-                                                        <TouchableOpacity onPress={() => {
-                                                            console.log('ITEM  ================asdasda==', item)
-                                                            this.props.navigation.navigate('StageThree', {
-                                                                'artist_thumbnailURL': item['artist_photo'],
-                                                                'artist_name': item['artist_name'],
-                                                                'artist_id': item['artistID'],
-                                                                'genreID': item['genreID'],
-                                                                'previousScreen': 'Home',
-                                                            })
-                                                        }} activeOpacity={0.6} >
-                                                            <View style={Hstyles.borderImageGroup}>
-                                                                <Image style={Hstyles.borderImage} source={{ uri: BASE_PATH + "/" + item['artist_thumbnailURL'] }} />
-                                                                <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
-                                                                    <View style={Hstyles.imgAlbumNameArea2}>
-                                                                        <Text style={Hstyles.imgAlbumName2} >{item['title']}</Text>
-                                                                    </View>
-                                                                    <Text style={Hstyles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
-                                                                </View>
-                                                                <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(78,75,102,0.4)', 'rgb(78,75,102)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 60 }} />
-                                                            </View>
-
-                                                        </TouchableOpacity>
-                                                    )}
-                                                    keyExtractor={item => item.id}
-                                                />
-                                            </View>
-                                        )}
-                                    />
-                                </View>
-
-                            })
-                        }
-
-{/* 
+                        {/* 
                         <View style={Hstyles.mostTrending}>
                             <Text style={Hstyles.subTitle}>{strings.english}</Text>
                             <FlatList
@@ -603,6 +557,7 @@ class Home extends Component {
         );
     }
 }
+
 const Hstyles = StyleSheet.create({
     container: {
         flex: 1,
@@ -657,14 +612,12 @@ const Hstyles = StyleSheet.create({
         width: width * 0.25,
         height: width * 0.3,
         resizeMode: 'cover',
-    }, 
+    },
 })
 
 const mapStateToProps = (state) => {
     return {
-        album: state.album,
         topPlayed: state.topPlayed,
-        genre: state.genre
     }
 }
 

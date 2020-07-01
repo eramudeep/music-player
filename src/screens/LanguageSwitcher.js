@@ -11,7 +11,6 @@ import { fScale, hScale, vScale, sWidth, crScale } from "step-scale";
 import strings from "../strings";
 import { languageSwitcher } from "../helpers/Language";
 import LinearGradient from 'react-native-linear-gradient';
-import Icon1 from 'react-native-vector-icons/AntDesign';
 
 export default class LangSwitcher extends Component {
   state = {
@@ -56,7 +55,6 @@ export default class LangSwitcher extends Component {
         <LinearGradient colors={['rgba(0,0,0,0)', '#000']} style={{ position: 'absolute', bottom: 0, width: '120%', height: '100%', marginLeft: -40, zIndex: -100 }} />
 
         <TouchableOpacity style={styles.backButton} onPress={() => this.props.navigation.navigate('Home')}>
-          {/* <Icon1 name='left' size={30} color="gray" /> */}
           <Icon name={this.state.currentLang == 'ar' ? "arrow-right" : "arrow-left"} size={20} style={styles.menu} color="grey" />
         </TouchableOpacity>
         <View style={headContainer}>

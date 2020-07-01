@@ -19,7 +19,6 @@ import Modal, {
 
 const url = require('../../assets/images/favorite.png')
 
-
 class Down extends Component {
     constructor(props) {
         super(props);
@@ -59,7 +58,6 @@ class Down extends Component {
     handleRemove() {
 
         RNFS.unlink(`file://${RNFS.DocumentDirectoryPath}/${this.state.removeclicked['source']}`).then((r) => {
-
         }).catch(error => {
             alert(error)
             this.setState({ modalVisible: false })
@@ -73,7 +71,6 @@ class Down extends Component {
                         index = i;
                     }
                 }
-
                 temp.splice(index, 1)
                 this.setState({ sourcedata: temp })
                 AsyncStorage.setItem('data', JSON.stringify(temp));
@@ -82,7 +79,6 @@ class Down extends Component {
                     modalVisible1: true
                 })
                 setTimeout(() => { this.setState({ modalVisible1: false }) }, 1000)
-
             });
         }).catch(error => {
             alert(error)
@@ -118,7 +114,6 @@ class Down extends Component {
                                     <Text style={styles.modalbuttonText} > {strings.cancel} </Text>
                                 </TouchableOpacity>
                             </View>
-
                         </ModalContent>
                     </Modal>
                     <Modal
@@ -144,15 +139,12 @@ class Down extends Component {
                         style={{ height: '100%' }}
                     >
                         <LinearGradient colors={['rgba(0,0,0,0)', '#000F']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 100 }} />
-
                         <View style={styles.downMedium}>
-
                             <TouchableOpacity style={styles.largePlay}
                                 disabled={
                                     this.state.playClicked == false ? true : false
                                 }
                                 onPress={() => {
-
                                     this.state.clickedType == 0 ? (
                                         this.props.navigation.navigate('DownVideoPlayer',
                                             {
@@ -173,7 +165,6 @@ class Down extends Component {
                                 <Icon2 name="play" size={20} style={styles.menu} color="red" />
                             </TouchableOpacity>
                         </View>
-
                     </ImageBackground>
                 </View>
                 <View style={styles.bottomArea}>
@@ -185,7 +176,6 @@ class Down extends Component {
                         data={this.state.sourcedata}
                         renderItem={({ item }) => (
                             <TouchableOpacity
-
                             >
                                 <TouchableOpacity
                                     onPress={async() => {
@@ -209,11 +199,9 @@ class Down extends Component {
                                     <Text style={styles.downremoveButtonText} >{strings.remove}</Text>
                                 </TouchableOpacity>
                             </TouchableOpacity>
-
                         )}
                         keyExtractor={item => item.id}
                     />
-
                 </View>
             </View>
         );
@@ -221,5 +209,3 @@ class Down extends Component {
 }
 
 export default withNavigation(Down);
-
-

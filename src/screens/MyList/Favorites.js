@@ -17,7 +17,6 @@ class Favorites extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            // backimage: 'http://192.168.110.249:8000/thumbnails/login3.png',
             backimage: '',
             clickedType: '',
             clickedSource: '',
@@ -34,8 +33,6 @@ class Favorites extends Component {
           );
     }
 
-
-
     componentDidMount = async () => {
        this.getData()
     }
@@ -46,7 +43,6 @@ class Favorites extends Component {
             this.props.FetchfavourContentsgenre(obj);
         })
         console.log("this.props.animations.favorcontent",this.props.animations.favorcontent);
-        
         this.setState({
             backimage: url
         })
@@ -79,7 +75,6 @@ class Favorites extends Component {
             setTimeout(() => {
                 this.props.FetchfavourContentsgenre(user_id);
             }, 1000);
-        
     }
 
     render() {
@@ -140,14 +135,12 @@ class Favorites extends Component {
                         style={{ height: '100%' }}
                     >
                         <LinearGradient colors={['rgba(0,0,0,0)', '#000']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 100 }} />
-
                         <View style={styles.downMedium}>
                             <TouchableOpacity style={{ ...styles.largePlay, marginTop: '-50%' }}
                                 disabled={
                                     this.state.playClicked == false ? true : false
                                 }
                                 onPress={() => {
-
                                     this.state.clickedType == 0 ? (
                                         this.props.navigation.navigate('FavourVideoPlayer',
                                             {
@@ -189,7 +182,6 @@ class Favorites extends Component {
                                             clickedSource: item['contentURL'],
                                             playClicked: true
                                         })
-
                                     }} >
                                         <Image style={{ ...styles.borderImage1, marginLeft: 30 }} source={{ uri: BASE_PATH + '/' + item['thumbnailURL'] }} />
                                         <Text style={{ ...styles.imgName, marginLeft: 30 }} >{item['title']}</Text>
@@ -206,8 +198,6 @@ class Favorites extends Component {
                             :
                             <Text style={{ color: 'white', fontSize: 17 }}>There is no favorite music</Text>
                     }
-
-
                 </View>
             </View>
         );
@@ -219,6 +209,5 @@ const mapStateToProps = (state) => {
         animations: state.animations
     }
 }
-
 
 export default connect(mapStateToProps, { FetchfavourContentsgenre })(Favorites);

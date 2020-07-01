@@ -5,7 +5,7 @@ import strings from '../strings';
 import NavigationService from '../navigators/NavigationService';
 
 const defaultLanguageCode = 'ar'
- 
+
 export const languageSwitcher = {
 
     async startup() { 

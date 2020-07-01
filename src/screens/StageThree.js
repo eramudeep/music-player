@@ -22,9 +22,7 @@ import Modal, {
     ScaleAnimation,
 } from 'react-native-modals';
 
-
 const { width, height } = Dimensions.get('window');
-
 
 class StageThree extends Component {
 
@@ -63,7 +61,6 @@ class StageThree extends Component {
     componentDidMount = async () => {
         let genreID = this.props.navigation.getParam('genreID')
         let artistID = this.props.navigation.getParam('artist_id')
-
         console.log('artistContent=======================', this.props.topPlayed)
         await this.props.FetchAlbumByArtist(genreID, artistID)
         await this.props.FetchArtistContent(artistID)
@@ -83,15 +80,12 @@ class StageThree extends Component {
                 currentLang: 'en'
             })
         }
-
     }
 
     openDrawer() {
         drawer.current.open()
         // setTimeout(function(){this.changeState()}.bind(this), 1000)
     }
-
-
 
     render() {
         let artist_name = this.props.navigation.getParam('artist_name')
@@ -103,7 +97,6 @@ class StageThree extends Component {
                         <BarIndicator color='#bbb' count={5} style={{ position: 'absolute', alignSelf: "center", marginTop: height * 0.5, zIndex: 1000 }} />
                     )
                 }
-
                 <View style={styles.container}>
                     <View style={styles.searchArea}>
                         <TouchableOpacity onPress={() => this.openDrawer()}>
@@ -119,64 +112,18 @@ class StageThree extends Component {
                     <ScrollView style={styles.bottomArea}>
                         <Text style={{ ...styles.top, zIndex: 1000 }}>{artist_name}</Text>
                         <View style={styles.albumArea}>
-
                             <View style={styles.albumImageGroup}>
-
-                                <Image style={styles.albumImage} source={{ uri: "http://192.168.110.249:8000/" + artist_thumbnailURL }} />
+                                <Image style={styles.albumImage} source={{ uri: BASE_PATH + "/" + artist_thumbnailURL }} />
                                 <View style={{ position: 'absolute', bottom: -30, width: width * 0.6, height: width * 0.35, zIndex: 90 }}>
                                     <View style={styles.imgAlbumNameArea}>
                                         <Text style={styles.imgAlbumName} >{artist_name}</Text>
                                     </View>
                                 </View>
                                 <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(0,0,0,0.4)', 'rgba(0,0,0,0.8)', '#000']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 150, borderRadius: 15 }} />
-
                             </View>
-
                         </View>
 
                         <Text style={{ ...styles.most, marginBottom: 10, marginTop: 1 }}>{artist_name}'s {strings.albums}</Text>
-
-                        {/* <FlatList
-                            style={{ width: '100%', paddingVertical: 10, marginBottom: 10, borderBottomColor: '#ddd', borderBottomWidth: 3, borderTopColor: '#ddd', borderTopWidth: 3 }}
-                            showsHorizontalScrollIndicator={true}
-                            initialNumToRender={10}
-                            horizontal
-                            data={this.props.album ? this.props.album.getAlbumByArtist : []}
-
-                            renderItem={({ item }) => (
-                                <TouchableOpacity onPress={() => {
-                                    this.props.navigation.navigate('StageFour', {
-                                        'thumbnailURL': item['thumbnailURL'],
-                                        'title': item['title'],
-                                        'type': item['type'],
-                                        'contentURL': item['contentURL'],
-                                        'artistID': item['artistID'],
-                                        'totalItem': item,
-                                        'desc_long': item['desc_long'],
-                                        'genreID': item['genreID'],
-                                        'albumID': item['albumID'],
-                                        'contentID': item['id']
-                                    })
-                                }} activeOpacity={0.6} >
-                                    <View style={styles.borderImageGroup}>
-                                        <Image style={styles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
-                                        <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
-                                            <View style={styles.imgAlbumNameArea2}>
-                                                <Text style={styles.imgAlbumName2} >{item['title']}</Text>
-                                            </View>
-                                            <Text style={styles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
-                                        </View>
-                                        <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(140,140,177,0.5)', 'rgba(89,85,125,0.9)', 'rgb(58,55,82)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 100, borderRadius: 15 }} />
-                                    </View>
-
-                                </TouchableOpacity>
-                            )}
-                            keyExtractor={item => item.id}
-                        /> */}
-
-
-
-
 
                         <FlatList
                             data={this.props.topPlayed ? this.props.topPlayed.artistContent : []}
@@ -225,22 +172,6 @@ class StageThree extends Component {
                                 </View>
                             )}
                         />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     </ScrollView>
                 </View>

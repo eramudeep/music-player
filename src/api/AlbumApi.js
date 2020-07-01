@@ -46,8 +46,8 @@ export default {
         apiCall.makeGetRequest(config.api.getArabicTotalTopPlayed, callback, fail);
     },
 
-    getArtist(callback, fail) {
-        apiCall.makeGetRequest(config.api.getArtist, callback, fail);
+    getArtist(callback, fail, genreID) {
+        apiCall.makeGetRequest(config.api.getArtist + '/' + genreID.toString(), callback, fail);
     },
 
     getLatestPlayed(callback, fail, userID) {

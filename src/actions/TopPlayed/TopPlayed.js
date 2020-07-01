@@ -75,7 +75,7 @@ export const FetchTotalTopPlayed = () => (
         }, (err) => {
             console.log(err)
         })
-    } 
+    }
 )
 
 export const FetchIraqiTotalTopPlayed = () => (
@@ -112,7 +112,7 @@ export const FetchRandomTop = (randomTop) => (
     }
 )
 
-export const FetchArtist = () => (
+export const FetchArtist = (genreID) => (
     (dispatch) => {
         AlbumApi.getArtist((response) => {
             // console.log('******************----++++', response)
@@ -120,7 +120,7 @@ export const FetchArtist = () => (
         }, (err) => {
             // console.log(err, alert(err, 'albumError'))
             console.log(err)
-        }, )
+        },genreID )
     }
 )
 

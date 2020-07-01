@@ -8,25 +8,13 @@ import NavigationService from '../navigators/NavigationService';
 import { languageSwitcher } from '../helpers/Language';
 import { BarIndicator } from 'react-native-indicators';
 import strings from '../strings';
-import Modal, {
-    ModalTitle,
-    ModalContent,
-    ModalFooter,
-    ModalButton,
-    SlideAnimation,
-    ScaleAnimation,
-} from 'react-native-modals';
+import Modal, { ModalContent } from 'react-native-modals';
 import { LoginButton, AccessToken, LoginManager, GraphRequest, GraphRequestManager } from 'react-native-fbsdk';
-import {
-    GoogleSignin,
-    GoogleSigninButton,
-    statusCodes,
-} from '@react-native-community/google-signin';
+import { GoogleSignin, GoogleSigninButton, statusCodes } from '@react-native-community/google-signin';
 import { BASE_PATH } from '../api/config'
 
 let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const { width, height } = Dimensions.get('window')
-
 
 export default class MusicApp extends Component {
 
@@ -49,7 +37,6 @@ export default class MusicApp extends Component {
             exitState: false,
             userIDState: ''
         }
-        global.GuserID = ''
     }
 
     onChangeHandle = (text) => {
@@ -93,9 +80,6 @@ export default class MusicApp extends Component {
     componentDidMount = async () => {
         StatusBar.setHidden(true);
         console.disableYellowBox = "true"
-        // BackHandler.addEventListener('hardwareBackPress', this.onBackPress);
-        // this.setState({ exitState: false })
-
         GoogleSignin.configure();
     };
 
@@ -120,22 +104,9 @@ export default class MusicApp extends Component {
         }
     }
 
-    // componentWillUnmount() {
-    //     BackHandler.removeEventListener('hardwareBackPress', this.onBackPress);
-    // }
-
     Warning() {
         this.setState({ modalVisible: true })
     }
-    // for test
-    // async aaa() {
-    //     try {
-    //         const value = await AsyncStorage.getItem('userID')
-    //       console.log('value------------------', value)
-    //     } catch(e) {
-    //         // read error
-    //       }
-    // }
 
     handleLogin = async () => {
         Keyboard.dismiss()
@@ -166,33 +137,25 @@ export default class MusicApp extends Component {
                 body: JSON.stringify(user)
             });
             let result = await response.json();
-            // alert(JSON.stringify(result))
 
-            console.log('user=============',result)
+            console.log('user=============', result)
             if (result.status_code == 200) {
-
-
                 const resUser = result.user;
                 axios.post(BASE_PATH + '/api/auth/login', user)
                     .then(async (response) => {
                         try {
                             await AsyncStorage.setItem('userID', JSON.stringify(response['data']['data']['user']['id']))
                             await AsyncStorage.setItem('userToken', JSON.stringify(response['data']['data']['token']['value']))
-                            console.log("User login ",response);
-                            
-                            console.log('id============',(await AsyncStorage.getItem('userID')).toString())
-                            console.log('tok============',(await AsyncStorage.getItem('userToken')).toString())
+                            console.log("User login ", response);
+
+                            console.log('id============', (await AsyncStorage.getItem('userID')).toString())
+                            console.log('tok============', (await AsyncStorage.getItem('userToken')).toString())
                         } catch (error) {
                             console.log('catch error', error)
                         }
-
-                        // setTimeout(() => {
-                        //     this.aaa()
-                        // }, 1000);
                         this.setState({
                             loading: false,
                         })
-                        // GuserID = this.state.userIDState
                         clearTimeout(myTimer);
 
                         this.props.navigation.navigate('Home', {
@@ -213,7 +176,6 @@ export default class MusicApp extends Component {
                         } else {
                             this.setState({ timeFlag: false })
                         }
-
                     })
             } else {
                 await this.setState({
@@ -225,9 +187,6 @@ export default class MusicApp extends Component {
                 this.Warning()
             }
         }
-
-        // NavigationService.navigate('Home');
-
     }
 
     NetworkSensor = async () => {
@@ -272,8 +231,8 @@ export default class MusicApp extends Component {
                     try {
                         await AsyncStorage.setItem('userID', JSON.stringify(response['data']['data']['user']['id']))
                         await AsyncStorage.setItem('userToken', JSON.stringify(response['data']['data']['token']['value']))
-                        console.log('id============',(await AsyncStorage.getItem('userID')).toString())
-                        console.log('tok============',(await AsyncStorage.getItem('userToken')).toString())
+                        console.log('id============', (await AsyncStorage.getItem('userID')).toString())
+                        console.log('tok============', (await AsyncStorage.getItem('userToken')).toString())
                     } catch (error) {
                         console.log('catch error', error)
                     }
@@ -289,19 +248,19 @@ export default class MusicApp extends Component {
 
                     // LoginManager.logOut();
                 }).catch((err) => {
-                if (!this.state.timeFlag) {
-                    if (err.message == "Request failed with status code 401") {
-                        this.setState({
-                            loading: false,
-                            Error: err.message
-                        })
-                        this.Warning()
+                    if (!this.state.timeFlag) {
+                        if (err.message == "Request failed with status code 401") {
+                            this.setState({
+                                loading: false,
+                                Error: err.message
+                            })
+                            this.Warning()
+                        }
+                        clearTimeout(myTimer);
+                    } else {
+                        this.setState({ timeFlag: false })
                     }
-                    clearTimeout(myTimer);
-                } else {
-                    this.setState({ timeFlag: false })
-                }
-            })
+                })
         }
     }
 
@@ -326,8 +285,8 @@ export default class MusicApp extends Component {
                     try {
                         await AsyncStorage.setItem('userID', JSON.stringify(response['data']['data']['user']['id']))
                         await AsyncStorage.setItem('userToken', JSON.stringify(response['data']['data']['token']['value']))
-                        console.log('id============',(await AsyncStorage.getItem('userID')).toString())
-                        console.log('tok============',(await AsyncStorage.getItem('userToken')).toString())
+                        console.log('id============', (await AsyncStorage.getItem('userID')).toString())
+                        console.log('tok============', (await AsyncStorage.getItem('userToken')).toString())
                     } catch (error) {
                         console.log('catch error', error)
                     }
@@ -335,27 +294,25 @@ export default class MusicApp extends Component {
                         loading: false,
                     })
                     clearTimeout(myTimer);
-
                     this.props.navigation.navigate('Home', {
                         'Token': response['data']['data']['token']['value'],
                         'userID': response['data']['data']['user']['id']
                     });
-
                     GoogleSignin.signOut();
                 }).catch((err) => {
-                if (!this.state.timeFlag) {
-                    if (err.message == "Request failed with status code 401") {
-                        this.setState({
-                            loading: false,
-                            Error: err.message
-                        })
-                        this.Warning()
+                    if (!this.state.timeFlag) {
+                        if (err.message == "Request failed with status code 401") {
+                            this.setState({
+                                loading: false,
+                                Error: err.message
+                            })
+                            this.Warning()
+                        }
+                        clearTimeout(myTimer);
+                    } else {
+                        this.setState({ timeFlag: false })
                     }
-                    clearTimeout(myTimer);
-                } else {
-                    this.setState({ timeFlag: false })
-                }
-            })
+                })
         } catch (error) {
             console.log('----google error----', error);
         }
@@ -367,12 +324,6 @@ export default class MusicApp extends Component {
                 source={require('../assets/images/login3.png')}
                 resizeMode={'stretch'}
                 style={{ height: '100%', flex: 1 }}>
-
-                {/* {
-                    this.state.loading && (
-                        <BarIndicator color='white' count={5} style={{ position: 'absolute', alignSelf: "center", marginTop: height * 0.5, zIndex: 2000 }} />
-                    )
-                } */}
                 <Modal
                     width={0.9}
                     visible={this.state.modalVisible}
@@ -422,25 +373,8 @@ export default class MusicApp extends Component {
 
                 <LinearGradient colors={['rgba(0,0,0,0)', '#000']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 200 }} />
                 <View style={styles.txtGroup}>
-                    {/* <View style={styles.txtBox}>
-                        <Text style={styles.txt}>
-                            {strings.youarealready}
-                            {'\n'}{strings.pleaseenteryourmobile}
-                        </Text>
-                    </View> */}
                     <View style={{ flex: 1.5 }}></View>
-
                     <View style={styles.formGroup}>
-                        {/* <View style={{ flexDirection: 'row', marginBottom: 10 }} >
-
-                            <View style={styles.phoneInput}>
-                                <TextInput keyboardType='email' style={styles.phone}
-                                    onChangeText={(text) => { this.onChangeHandle(text) }}
-                                    value={this.state.phone}
-                                    placeholder={this.state.phoneplaceholder}
-                                />
-                            </View>
-                        </View> */}
                         <View style={{ flexDirection: 'row', marginBottom: 10 }} >
                             <View style={styles.phoneInput}>
                                 <TextInput keyboardType='email' style={styles.phone}
@@ -472,7 +406,6 @@ export default class MusicApp extends Component {
                             }
                         </TouchableOpacity>
                         <TouchableOpacity onPress={() => {
-                            // AsyncStorage.getItem('languageCode').then((obj)=> {console.log(obj)})
                             this.props.navigation.navigate('Signup')
                         }} style={styles.Btn} activeOpacity={0.7} disabled={this.state.loading ? true : false} >
                             <Text style={{ color: 'white', fontSize: 16 }}>{strings.signup}</Text>
@@ -502,11 +435,11 @@ export default class MusicApp extends Component {
                                         }
                                     }
                                 }
-                                onLogoutFinished={() => console.log("logout.")}/>
+                                onLogoutFinished={() => console.log("logout.")} />
                         </View>
 
                         {/*google login*/}
-                        <View style={{marginTop: 10}}>
+                        <View style={{ marginTop: 10 }}>
                             <GoogleSigninButton
                                 style={{ width: 192, height: 48 }}
                                 size={GoogleSigninButton.Size.Wide}

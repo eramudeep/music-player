@@ -17,7 +17,7 @@ import Modal, {
     SlideAnimation,
     ScaleAnimation,
 } from 'react-native-modals';
-
+import { BASE_PATH } from '../api/config';
 
 let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 const { width, height } = Dimensions.get('window')
@@ -63,19 +63,8 @@ export default class MusicApp extends Component {
         })
     }
 
-    // onBackPress = () => {
-    //     this.setState({
-    //         modalVisible: true,
-    //         exitState: true
-    //     })
-    //     return true;
-    // }
-
     componentDidMount = async () => {
-        // StatusBar.setHidden(true);
         console.disableYellowBox = "true"
-        // BackHandler.addEventListener('hardwareBackPress', this.onBackPress);
-        // this.setState({ exitState: false })
     }
 
     async UNSAFE_componentWillMount() {
@@ -93,86 +82,10 @@ export default class MusicApp extends Component {
         }
     }
 
-    // componentWillUnmount() {
-    //     BackHandler.removeEventListener('hardwareBackPress', this.onBackPress);
-    // }
-
     Warning() {
         this.setState({ modalVisible: true })
     }
-    // for test
-    // async aaa() {
-    //     try {
-    //         const value = await AsyncStorage.getItem('userID')
-    //       console.log('value------------------', value)
-    //     } catch(e) {
-    //         // read error
-    //       }
-    // }
-
-    // handleLogin = async () => {
-    //     const user = {
-    //         email: this.state.email,
-    //         password: this.state.password,
-    //         is_mobile: true
-    //     };
-
-    //     if (this.state.email == "") {
-    //         this.Warning()
-    //     } else if (this.state.password == "") {
-    //         this.Warning()
-    //     } else if (reg.test(this.state.email) === false) {
-    //         this.Warning()
-    //         return false;
-    //     } else {
-    //         var myTimer = setTimeout(function () { this.NetworkSensor() }.bind(this), 5000)
-    //         this.setState({
-    //             loading: true
-    //         })
-    //         axios.post('http://192.168.110.249:8000/api/auth/login', user)
-    //             .then(async (response) => {
-    //                 try {
-    //                     await AsyncStorage.setItem('userID', JSON.stringify(response['data']['data']['user']['id']))
-    //                     console.log(response['data']['data']['user']['id'])
-    //                 } catch (error) {
-    //                     console.log('catch error', error)
-    //                 }
-
-    //                 // setTimeout(() => {
-    //                 //     this.aaa()
-    //                 // }, 1000);
-    //                 this.setState({
-    //                     loading: false,
-    //                     // userIDState: response['data']['data']['user']['id']
-    //                 })
-    //                 // GuserID = this.state.userIDState
-    //                 clearTimeout(myTimer);
-
-    //                 NavigationService.navigate('Home', {
-    //                     'Token': response['data']['data']['token']['value'],
-    //                     // 'userID': response['data']['data']['user']['id']
-    //                 });
-    //             }).catch((err) => {
-    //                 console.log(JSON.stringify(err));
-    //                 if (!this.state.timeFlag) {
-    //                     if (err.message == "Request failed with status code 401") {
-    //                         this.setState({
-    //                             loading: false,
-    //                             Error: err.message
-    //                         })
-    //                         this.Warning()
-    //                     }
-    //                     clearTimeout(myTimer);
-    //                 } else {
-    //                     this.setState({ timeFlag: false })
-    //                 }
-
-    //             })
-    //     }
-
-    //     // NavigationService.navigate('Home');
-
-    // }
+    
 
     NetworkSensor = async () => {
         await this.setState({
@@ -197,7 +110,7 @@ export default class MusicApp extends Component {
                 loading: true
             })
             // Linking.openURL('mailto: ' + user['email'])  // after upload server, delete this line
-            axios.post('http://192.168.110.249:8000/api/auth/forgotPassword', user)
+            axios.post(BASE_PATH + '/api/auth/forgotPassword', user)
                 .then(async (response) => {
                     console.log(response);
                     this.setState({
@@ -305,13 +218,6 @@ export default class MusicApp extends Component {
                         <TouchableOpacity onPress={() => {
                             this.sendEmail(this.state.email)
                         }} style={styles.BtnOuter} activeOpacity={0.7} >
-                            {/* {
-                                this.state.loading
-                                    ?
-                                    <BarIndicator color='white' count={5} size={17} style={{ alignSelf: "center", zIndex: 2000 }} />
-                                    :
-                                    <Text style={{ color: 'white' }}>{strings.send}</Text>
-                            } */}
                             <Text style={{ color: 'white' }}>{strings.send}</Text>
                         </TouchableOpacity>
                     </View>

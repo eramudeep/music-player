@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Image, AsyncStorage } from 'react-native';
 import Video from 'react-native-video';
 import Icon from 'react-native-vector-icons/AntDesign';
-import axios from 'axios'
-import strings from '../../strings';
 import RNFS from 'react-native-fs';
-
 
 export default class DownMusicPlayer extends Component {
   constructor(props) {
@@ -23,8 +20,6 @@ export default class DownMusicPlayer extends Component {
       clicked: this.props.navigation.getParam('clicked')
     })
   }
-
-
 
   render() {
     return (

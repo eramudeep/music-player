@@ -41,6 +41,8 @@ export default class FavourVideoPlayer extends Component {
       })
     }
   }
+
+  
   handleMainButtonTouch = () => {
     if (this.state.progress >= 0.99) {
       this.VideoPlayer.seek(0);

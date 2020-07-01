@@ -19,6 +19,7 @@ import Modal, {
     SlideAnimation,
     ScaleAnimation,
 } from 'react-native-modals';
+import { BASE_PATH } from '../api/config';
 
 
 const { width, height } = Dimensions.get('window');
@@ -80,7 +81,7 @@ class StageFour extends Component {
         this.props.FetchAlbums(genreID, artistID, this.state.albumIDState)
         // this.props.FetchTopPlayed(genreID, userID)
         // artist_name catch
-        axios.get('http://192.168.110.249:8000/api/content/album/' + genreID + '/' + artistID + '/' + albumID + '', {
+        axios.get(BASE_PATH + '/api/content/album/' + genreID + '/' + artistID + '/' + albumID + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -128,7 +129,7 @@ class StageFour extends Component {
     }
 
     albumNameCatch = async (genreID, artistID, albumID) => {
-        axios.get('http://192.168.110.249:8000/api/content/album/' + genreID + '/' + artistID + '/' + albumID + '', {
+        axios.get(BASE_PATH + '/api/content/album/' + genreID + '/' + artistID + '/' + albumID + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -150,7 +151,7 @@ class StageFour extends Component {
         console.log('-------albumIDState--------------',albumIDState)
         console.log('-------contentIDState--------------',contentIDState)
         // rowIndex catch
-        axios.get('http://192.168.110.249:8000/api/content/selectedAlbumContent/' + albumIDState + '/' + contentIDState, {
+        axios.get(BASE_PATH + '/api/content/selectedAlbumContent/' + albumIDState + '/' + contentIDState, {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -178,7 +179,7 @@ class StageFour extends Component {
         console.log('*******************',albumIDState);
         
         // rowIndex catch
-        axios.get('http://192.168.110.249:8000/api/content/selectedAlbumContent/' + albumIDState, {
+        axios.get(BASE_PATH + '/api/content/selectedAlbumContent/' + albumIDState, {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -217,13 +218,13 @@ class StageFour extends Component {
             if (JSON.parse(result) == null) {
 
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedSource,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedSource,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedSource[this.state.clickedSource.length - 3]}${this.state.clickedSource[this.state.clickedSource.length - 2]}${this.state.clickedSource[this.state.clickedSource.length - 1]}`,
                 }).promise.then((r) => {
 
                 });
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedThumb,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedThumb,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedThumb[this.state.clickedThumb.length - 3]}${this.state.clickedThumb[this.state.clickedThumb.length - 2]}${this.state.clickedThumb[this.state.clickedThumb.length - 1]}`,
                 }).promise.then((r) => {
                     AsyncStorage.setItem('data', JSON.stringify([{
@@ -243,12 +244,12 @@ class StageFour extends Component {
             }
             else {
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedSource,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedSource,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedSource[this.state.clickedSource.length - 3]}${this.state.clickedSource[this.state.clickedSource.length - 2]}${this.state.clickedSource[this.state.clickedSource.length - 1]}`,
                 }).promise.then((r) => {
                 });
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedThumb,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedThumb,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedThumb[this.state.clickedThumb.length - 3]}${this.state.clickedThumb[this.state.clickedThumb.length - 2]}${this.state.clickedThumb[this.state.clickedThumb.length - 1]}`,
                 }).promise.then((r) => {
                     let temp = JSON.parse(result);
@@ -276,7 +277,7 @@ class StageFour extends Component {
     }
 
     updateRegCount = async (userID, contentID) => {
-        axios.get('http://192.168.110.249:8000/api/updateRegCount/' + userID + '/' + contentID + '', {
+        axios.get(BASE_PATH + '/api/updateRegCount/' + userID + '/' + contentID + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -290,7 +291,7 @@ class StageFour extends Component {
     }
 
     updateDownCount = async (contentID) => {
-        axios.get('http://192.168.110.249:8000/api/updateDownCount/' + contentID + '', {
+        axios.get(BASE_PATH + '/api/updateDownCount/' + contentID + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -466,9 +467,9 @@ class StageFour extends Component {
 
 
                                         </View>
-                                        <Image style={styles.albumImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
-                                        {/* <Image style={styles.albumImage} source={{ uri: "http://192.168.110.249:8000/" + this.state.clickedThumb }} /> */}
-                                        {/* <Image style={styles.albumImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} /> */}
+                                        <Image style={styles.albumImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
+                                        {/* <Image style={styles.albumImage} source={{ uri: BASE_PATH + "/" + this.state.clickedThumb }} /> */}
+                                        {/* <Image style={styles.albumImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} /> */}
                                         <View style={{ position: 'absolute', bottom: 30, width: width * 0.4, height: width * 0.35, zIndex: 90 }}>
                                             <View style={styles.imgAlbumNameArea}>
                                                 <Text style={styles.imgAlbumName} >{item['title']}</Text>
@@ -603,7 +604,7 @@ class StageFour extends Component {
                                         }}>
                                             <Icon name="play" size={25} color="#fff" />
                                         </TouchableOpacity>
-                                        <Image style={styles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
+                                        <Image style={styles.borderImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
                                         <View style={{ position: 'absolute', bottom: 0, width: 200, height: 75, zIndex: 100 }}>
                                             <View style={styles.imgAlbumNameArea2}>
                                                 <Text style={styles.imgAlbumName2} >{item['title']}</Text>

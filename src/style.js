@@ -600,12 +600,12 @@ const styles = StyleSheet.create({
     },
     downBtnTxt: {
         fontSize: 18,
-        color: '#f00',
+        color: 'red',
         letterSpacing: 3
     },
     downBtnTxt1: {
         fontSize: 18,
-        color: '#f00',
+        color: 'red',
         letterSpacing: 3
     },
     modalbutton: {

@@ -237,5 +237,8 @@ export default en = {
     forgotpwd: 'Forgot password?',
     mosttrending: 'Most Trending',
     arabicmosttrending: 'Arabic most trending',
-    iraqimosttrending: 'Iraqi most trending'
+    iraqimosttrending: 'Iraqi most trending',
+    audio: 'audio',
+    video: 'video',
+    emptysearch: 'Please type song name, album name, artist name you want to search'
   };

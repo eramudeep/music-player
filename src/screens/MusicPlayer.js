@@ -6,34 +6,9 @@ import axios from 'axios'
 import LinearGradient from 'react-native-linear-gradient';
 import strings from '../strings';
 import Player from './Player'
-import Modal, {
-  ModalTitle,
-  ModalContent,
-  ModalFooter,
-  ModalButton,
-  SlideAnimation,
-  ScaleAnimation,
-} from 'react-native-modals';
+import Modal, { ModalContent, SlideAnimation } from 'react-native-modals';
 import TrackPlayer from 'react-native-track-player';
-
-// const playbackState = TrackPlayer.usePlaybackState();
-// useEffect(() => {
-//   TrackPlayer.setupPlayer();
-//   TrackPlayer.updateOptions({
-//     stopWithApp: false,
-//     capabilities: [
-//       TrackPlayer.CAPABILITY_PLAY,
-//       TrackPlayer.CAPABILITY_PAUSE,
-//       TrackPlayer.CAPABILITY_SKIP_TO_NEXT,
-//       TrackPlayer.CAPABILITY_SKIP_TO_PREVIOUS,
-//       TrackPlayer.CAPABILITY_STOP
-//     ],
-//     compactCapabilities: [
-//       TrackPlayer.CAPABILITY_PLAY,
-//       TrackPlayer.CAPABILITY_PAUSE
-//     ]
-//   });
-// }, []);
+import { BASE_PATH } from '../api/config'
 
 export default class MusicPlayer extends Component {
   constructor(props) {
@@ -43,7 +18,6 @@ export default class MusicPlayer extends Component {
       clicked: '',
       modalVisible: false,
       successVisible: false,
-      // playbackState: TrackPlayer.usePlaybackState()
     };
   }
 
@@ -68,15 +42,13 @@ export default class MusicPlayer extends Component {
     });
   }
 
-
   async togglePlayback() {
     const currentTrack = await TrackPlayer.getCurrentTrack();
     if (currentTrack == null) {
       await TrackPlayer.reset();
-      // await TrackPlayer.add(playlistData);
       await TrackPlayer.add({
         id: "local-track",
-        url: 'http://192.168.110.249:8000/' + this.props.navigation.getParam('clickedSource'),
+        url: BASE_PATH + '/' + this.props.navigation.getParam('clickedSource'),
         title: "Pure (Demo)",
         artist: "David Chavez",
         artwork: "https://picsum.photos/200"
@@ -94,7 +66,7 @@ export default class MusicPlayer extends Component {
 
   async addfavour() {
     const body = this.state.clicked;
-    axios.post('http://192.168.110.249:8000/api/content/favorupload', body, {
+    axios.post(BASE_PATH + '/api/content/favorupload', body, {
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -188,11 +160,11 @@ export default class MusicPlayer extends Component {
         <TouchableOpacity style={styles.button} onPress={() => { this.setState({ full: !this.state.full }) }} >
           <Icon name={this.state.full == true ? 'arrowsalt' : 'shrink'} size={30} color='gray' />
         </TouchableOpacity>
-        <Image source={{ uri: 'http://192.168.110.249:8000/' + this.props.navigation.getParam('clickedThumb') }} style={{
+        <Image source={{ uri: BASE_PATH + '/' + this.props.navigation.getParam('clickedThumb') }} style={{
           ...styles.img, height: this.state.full != true ?
             Dimensions.get('window').width * (23 / 16) : Dimensions.get('window').width * (16 / 16)
         }} />
-        {/* <Video source={{ uri: 'http://192.168.110.249:8000/' + this.props.navigation.getParam('clickedSource') }} style={styles.bac}
+        {/* <Video source={{ uri: BASE_PATH + '/' + this.props.navigation.getParam('clickedSource') }} style={styles.bac}
           fullscreenOrientation="all"
           onBuffer={this.onBuffer}   // Callback function
           onError={this.videoError}

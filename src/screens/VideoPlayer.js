@@ -75,7 +75,6 @@ export default class VideoPlayer extends Component {
     const position = e.nativeEvent.locationX;
     const progress = (position / 250) * this.state.duration;
     const isPlaying = !this.state.paused;
-
     this.VideoPlayer.seek(progress);
   };
 

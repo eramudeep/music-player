@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from "react-redux";
 import store from "./store";
-
-
-// import AppNavigation from './navigators/AppNavigation';
 import Root from './navigators/AppNavigation';
 import { languageSwitcher } from './helpers/Language';
 
@@ -14,9 +11,9 @@ export default class App extends Component {
     const langCode = await languageSwitcher.getCurrentLanguageCode();
     await languageSwitcher.switchTo(langCode);
     await AsyncStorage.getItem('languageCode').then((obj) => {
-      console.log('App.js:============OBJ===================================', obj)
+      console.log('App=', obj)
     }).catch((error) => {
-      console.log('Err:==================', error)
+      console.log('Err=', error)
     })
   }
   render() {

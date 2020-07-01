@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, ImageBackground, TextInput, ScrollView, TouchableOpacity, Image, FlatList, AsyncStorage } from 'react-native';
+import { View, Text, ImageBackground, TextInput, ScrollView, TouchableOpacity, Image, FlatList } from 'react-native';
 import Icon1 from 'react-native-vector-icons/Ionicons';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import BottomNavigation, { FullTab } from 'react-native-material-bottom-navigation';
@@ -11,6 +11,8 @@ import strings from '../strings';
 import { connect } from 'react-redux'
 import { FetchLatestContents, FetchUserName } from '../actions/TopPlayed/TopPlayed'
 import axios from 'axios'
+import { BASE_PATH } from '../api/config';
+import AsyncStorage from '@react-native-community/async-storage';
 
 class Profile extends Component {
 
@@ -29,17 +31,21 @@ class Profile extends Component {
       })
     })
     setTimeout(() => {
-      console.log('(((((((((((((((', this.props.user)
+      console.log('===', this.props.user)
       this.props.FetchLatestContents(this.state.userID)
       this.props.FetchUserName(this.state.userID)
     }, 500);
   }
 
-  async removeLatest(userID,id) {
-    axios.get('http://192.168.110.249:8000/api/content/removeLatest/' + userID + '/' + id, {
+  removeLatest = async (userID,id) => {
+    let token =await AsyncStorage.getItem('userToken')
+    console.log(userID)
+    console.log(id)
+    axios.get(BASE_PATH + '/api/content/removeLatest/' + userID + '/' + id, {
       headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-        'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
+        'Content-Type': 'application/json',
+        'Authorization': 'bearer ' + token.replace(/['"]+/g, '')
+        // 'Authorization': 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfdWlkIjoiamlueW91Y2hlbmcxMjE3QGdtYWlsLmNvbSIsImlkIjoxMDEsImlhdCI6MTU5MzU5OTUwMn0.Lef1tMp1ahGP5Ca7cxqduYJRCXTCXfqJXCYCEoQ7YGc'
       }
     })
       .then((response) => {
@@ -103,11 +109,12 @@ class Profile extends Component {
                           'title': item['title'],
                           'type': item['type'],
                           'contentURL': item['contentURL'],
-                          'artistID': item['artistID'],
+                          'artist_id': item['artistID'],
                           'totalItem': item,
                           'desc_long': item['desc_long'],
-                          'genreType': item['genreID'],
+                          'genreID': item['genreID'],
                           'albumID': item['albumID'],
+                          'contentID': item['id'],
                           'previousScreen': 'Profile'
                         })
                       }} activeOpacity={0.6}>
@@ -115,7 +122,7 @@ class Profile extends Component {
                           source={require('../assets/images/opacityBack.png')}
                           resizeMode={'stretch'} style={styles.songItem}>
                           <View style={{ flexDirection: 'row' }}>
-                            <Image source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} resizeMode={"stretch"} style={{ width: 52, height: 52, marginLeft: 15, borderRadius: 50 }} />
+                            <Image source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} resizeMode={"stretch"} style={{ width: 52, height: 52, marginLeft: 15, borderRadius: 50 }} />
                             <Text style={styles.songTxt}>{item['title']}{'\n'}{item['desc_short']}</Text>
                           </View>
                           <View></View>

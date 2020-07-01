@@ -57,7 +57,8 @@ class StageFive extends Component {
             userIDState: '',
             currentLang: 'en',
             contentIDState: '',
-            toggleHeart: ''
+            toggleHeart: '',
+            lang: ''
         }
         this.onDownloadPress = this.onDownloadPress.bind(this);
     }
@@ -75,6 +76,7 @@ class StageFive extends Component {
         let thumbnailURL = this.props.navigation.getParam('thumbnailURL')
         let genreID = this.props.navigation.getParam('genreID')
         let title = this.props.navigation.getParam('title')
+        let ar_title = this.props.navigation.getParam('ar_title')
         let type = this.props.navigation.getParam('type')
         let contentURL = this.props.navigation.getParam('contentURL')
         let artistID = this.props.navigation.getParam('artist_id')
@@ -84,63 +86,25 @@ class StageFive extends Component {
         let artist_name = this.props.navigation.getParam('artist_name')
         let album_name = this.props.navigation.getParam('album_name')
         let previousScreen = this.props.navigation.getParam('previousScreen')
-
-
         // alert(contentID)
         // this.props.FetchAlbums(genreID, artistID)
+        let userID = await AsyncStorage.getItem('userID')
+
         await this.props.FetchContentsOfOneAlbum(contentID)
+        await this.props.FetchHeartOrNot(userID,contentID)
+        await AsyncStorage.getItem('languageCode').then((obj) => { this.setState({ lang: obj }) })
 
         await this.setState({
             contentIDState: contentID,
-            clickedTitle: title,
+            clickedTitle: this.state.lang == 'en' ? title : ar_title,
             clickedType: type,
             clickedSource: contentURL
         })
-
         console.log('===this.props.album.getContentsOfOneAlbum= ', this.props.album.getContentsOfOneAlbum[0]['album_name'])
-
         this.setState({
             album_name: this.props.album.getContentsOfOneAlbum[0]['album_name'],
             artist_name: this.props.album.getContentsOfOneAlbum[0]['artist_name']
         })
-
-
-
-        // // artist_name catch
-        // axios.get( BASE_PATH +'/api/content/artist/' + genreID + '/' + artistID + '', {
-        //     headers: {
-        //         'Content-Type': 'application/json;charset=utf-8',
-        //         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
-        //     }
-        // })
-        //     .then((response) => {
-        //         console.log('artistName============', response)
-        //         let artist_name = JSON.stringify(response['data']['data']['content'][0]['artist_name'])
-        //         this.setState({
-        //             artist_name: artist_name,
-        //         })
-        //     }, (err) => {
-        //         console.log('get artist name ======', err)
-        //     });
-
-        // album_name catch
-        // axios.get( BASE_PATH + '/api/content/album/' + genreID + '/' + artistID + '', {
-        //     headers: {
-        //         'Content-Type': 'application/json;charset=utf-8',
-        //         'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
-        //     }
-        // })
-        //     .then((response) => {
-        //         let album_name = JSON.stringify(response['data']['data']['content'][0]['album_name'])
-        //         this.setState({
-        //             album_name: album_name,
-        //         })
-        //     }, (err) => {
-        //         console.log('get artist name ======', err)
-        //     });
-
-        // this.props.FetchTopPlayed(genType)
-
         if ((await AsyncStorage.getItem("languageCode")).toString() == 'en') {
             this.setState({
                 currentLang: 'en'
@@ -150,17 +114,7 @@ class StageFive extends Component {
                 currentLang: 'ar'
             })
         }
-
     }
-
-    // backPressed = () => {
-    //     let previousScreen = this.props.navigation.getParam('previousScreen')
-    //     if (previousScreen == 'Home') {
-    //         this.props.navigation.goBack()
-    //     } else {
-    //         this.props.navigation.goBack()
-    //     }
-    // }
 
     openDrawer = () => {
         drawer.current.open()
@@ -293,6 +247,7 @@ class StageFive extends Component {
         let contentID = this.props.navigation.getParam('contentID')
         let artist_name = this.props.navigation.getParam('artist_name')
         let album_name = this.props.navigation.getParam('album_name')
+        let ar_album_name = this.props.navigation.getParam('ar_album_name')
         let previousScreen = this.props.navigation.getParam('previousScreen')
         return (
             <View style={styles.box}>
@@ -371,7 +326,7 @@ class StageFive extends Component {
                             </View>
                         </TouchableWithoutFeedback>
                     </View>
-                    <Text style={styles.top}>{album_name}</Text>
+                    <Text style={styles.top}>{this.state.lang == 'en' ? album_name : ar_album_name}</Text>
                     <View style={styles.albumArea}>
 
                         <TouchableOpacity style={styles.albumImageGroup} onPress={async () => {
@@ -419,7 +374,7 @@ class StageFive extends Component {
                                 <View style={styles.imgAlbumNameArea}>
                                     <Text style={styles.imgAlbumName} >{this.state.clickedTitle}</Text>
                                 </View>
-                                <Text style={styles.imgAlbumNameType} >{this.state.clickedType == 0 ? 'Video' : 'Audio'}</Text>
+                                <Text style={styles.imgAlbumNameType} >{this.state.clickedType == 0 ? strings.video : strings.audio}</Text>
                                 {/* <Text style={styles.price}>500IQD</Text> */}
                             </View>
                             <View style={styles.buttonGroup}>
@@ -433,9 +388,6 @@ class StageFive extends Component {
                                     }} >
                                     <Text style={{ color: Colors.heading }}>{strings.download}</Text>
                                 </TouchableOpacity>
-                                {/* <TouchableOpacity style={{ ...styles.DownBtn, backgroundColor: '#fff', }} activeOpacity={0.6} >
-                                    <Text style={{ color: '#e207b0' }}>{strings.gift}</Text>
-                                </TouchableOpacity> */}
                             </View>
                             <TouchableOpacity style={styles.play} onPress={async () => {
                                 let userID = await AsyncStorage.getItem('userID')
@@ -467,18 +419,6 @@ class StageFive extends Component {
                     {/* //////////////////////    Must be enter later   ////////////////////////// */}
                     <View style={styles.bottomArea}>
 
-                        {/* <ScrollView style={{ backgroundColor: '#eee', borderRadius: 20, paddingHorizontal: 25, paddingBottom: 5, elevation: 5 }}>
-                            <Text style={{ fontSize: 18, marginVertical: 10 }}>{desc_long}</Text>
-                        </ScrollView> */}
-
-
-
-
-
-
-
-
-
                         <FlatList
                             style={{ width: '100%', paddingVertical: 10, marginBottom: 10 }}
                             showsHorizontalScrollIndicator={true}
@@ -492,7 +432,7 @@ class StageFive extends Component {
                                     this.setState({
                                         contentIDState: item['id'],
                                         clickedThumb: item['thumbnailURL'],
-                                        clickedTitle: item['title'],
+                                        clickedTitle: this.state.lang == 'en' ? item['title'] : item['ar_title'],
                                         clickedType: item['type'],
                                         clickedSource: item['contentURL'],
                                         clicked: item
@@ -503,9 +443,9 @@ class StageFive extends Component {
                                         <Image style={styles.borderImage} source={{ uri: BASE_PATH + '/' + item['thumbnailURL'] }} />
                                         <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
                                             <View style={styles.imgAlbumNameArea2}>
-                                                <Text style={styles.imgAlbumName2} >{item['title']}</Text>
+                                                <Text style={styles.imgAlbumName2} >{this.state.lang == 'en' ? item['title'] : item['ar_title']}</Text>
                                             </View>
-                                            <Text style={styles.imgAlbumNameType} >{item['type'] == 1 ? 'audio' : 'video'}</Text>
+                                            <Text style={styles.imgAlbumNameType} >{item['type'] == 1 ? strings.audio : strings.video}</Text>
                                         </View>
                                         <LinearGradient colors={['rgba(0,0,0,0)', 'rgba(140,140,177,0.5)', 'rgba(89,85,125,0.9)', 'rgb(58,55,82)']} style={{ position: 'absolute', bottom: 0, width: '100%', height: 100, borderRadius: 15 }} />
                                     </View>
@@ -514,18 +454,6 @@ class StageFive extends Component {
                             )}
                             keyExtractor={item => item.id}
                         />
-
-
-
-
-
-
-
-
-
-
-
-
 
                     </View>
                 </View>
@@ -653,14 +581,14 @@ const styles = StyleSheet.create({
     },
     borderImage: {
         borderRadius: 15,
-        width: width * 0.38,
-        height: width * 0.45,
+        width: width * 0.33,
+        height: width * 0.4,
         resizeMode: 'cover',
     },
     borderImageGroup: {
         borderRadius: 15,
-        width: width * 0.38,
-        height: width * 0.45,
+        width: width * 0.33,
+        height: width * 0.4,
         margin: 5,
         elevation: 5,
     },
@@ -729,4 +657,3 @@ const styles = StyleSheet.create({
         elevation: 5
     }
 });
-

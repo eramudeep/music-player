@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Image } from 'react-native';
 import Video from 'react-native-video';
 import Icon from 'react-native-vector-icons/AntDesign';
+import { BASE_PATH } from '../../api/config';
 
 
 export default class FavourMusicPlayer extends Component {
@@ -21,11 +22,11 @@ export default class FavourMusicPlayer extends Component {
         <TouchableOpacity style={styles.button} onPress={() => { this.setState({ full: !this.state.full }) }} >
           <Icon name={this.state.full == true ? 'arrowsalt' : 'shrink'} size={30} color='gray' />
         </TouchableOpacity>
-        <Image source={{ uri: 'http://192.168.110.249:8000/' + this.props.navigation.getParam('clickedThumb') }} style={{
+        <Image source={{ uri: BASE_PATH + '/' + this.props.navigation.getParam('clickedThumb') }} style={{
           ...styles.img, height: this.state.full != true ?
             Dimensions.get('window').width * (23 / 16) : Dimensions.get('window').width * (16 / 16)
         }} />
-        <Video source={{ uri: 'http://192.168.110.249:8000/' + this.props.navigation.getParam('clickedSource') }} style={styles.bac}
+        <Video source={{ uri: BASE_PATH + '/' + this.props.navigation.getParam('clickedSource') }} style={styles.bac}
           fullscreenOrientation="all"
           onBuffer={this.onBuffer}   // Callback function
           onError={this.videoError}

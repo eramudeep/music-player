@@ -19,6 +19,7 @@ import Modal, {
     SlideAnimation,
     ScaleAnimation,
 } from 'react-native-modals';
+import { BASE_PATH } from '../api/config';
 
 
 const { width, height } = Dimensions.get('window');
@@ -77,7 +78,7 @@ class StageTwo extends Component {
             })
         }
 
-        let response = await fetch('http://192.168.110.249:8000/api/getArtistCount ', {
+        let response = await fetch(BASE_PATH + '/api/getArtistCount ', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
@@ -97,7 +98,7 @@ class StageTwo extends Component {
         this.props.FetchLatest(genType)
         this.props.FetchSubcategory(genType)
 
-        let resCountry = await fetch('http://192.168.110.249:8000/api/getArtist', {
+        let resCountry = await fetch(BASE_PATH + '/api/getArtist', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
@@ -140,7 +141,7 @@ class StageTwo extends Component {
     async addFavour() {
         const body = this.state.clicked;
         console.log('body====================', body)
-        axios.post('http://192.168.110.249:8000/api/content/favorupload', body, {
+        axios.post(BASE_PATH + '/api/content/favorupload', body, {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -177,13 +178,13 @@ class StageTwo extends Component {
             if (JSON.parse(result) == null) {
 
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedSource,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedSource,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedSource[this.state.clickedSource.length - 3]}${this.state.clickedSource[this.state.clickedSource.length - 2]}${this.state.clickedSource[this.state.clickedSource.length - 1]}`,
                 }).promise.then((r) => {
 
                 });
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedThumb,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedThumb,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedThumb[this.state.clickedThumb.length - 3]}${this.state.clickedThumb[this.state.clickedThumb.length - 2]}${this.state.clickedThumb[this.state.clickedThumb.length - 1]}`,
                 }).promise.then((r) => {
                     AsyncStorage.setItem('data', JSON.stringify([{
@@ -203,12 +204,12 @@ class StageTwo extends Component {
             }
             else {
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedSource,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedSource,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedSource[this.state.clickedSource.length - 3]}${this.state.clickedSource[this.state.clickedSource.length - 2]}${this.state.clickedSource[this.state.clickedSource.length - 1]}`,
                 }).promise.then((r) => {
                 });
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedThumb,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedThumb,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedThumb[this.state.clickedThumb.length - 3]}${this.state.clickedThumb[this.state.clickedThumb.length - 2]}${this.state.clickedThumb[this.state.clickedThumb.length - 1]}`,
                 }).promise.then((r) => {
                     let temp = JSON.parse(result);
@@ -237,7 +238,7 @@ class StageTwo extends Component {
 
     markHeart = async (user_id, id) => {
         let genType = this.props.navigation.getParam('genreType')
-        axios.get('http://192.168.110.249:8000/api/markHeart/' + user_id + '/' + id + '', {
+        axios.get(BASE_PATH + '/api/markHeart/' + user_id + '/' + id + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -257,7 +258,7 @@ class StageTwo extends Component {
     }
 
     updateRegCount = async (userID, contentID) => {
-        axios.get('http://192.168.110.249:8000/api/updateRegCount/' + userID + '/' + contentID + '', {
+        axios.get(BASE_PATH + '/api/updateRegCount/' + userID + '/' + contentID + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -271,7 +272,7 @@ class StageTwo extends Component {
     }
 
     updateDownCount = async (contentID) => {
-        axios.get('http://192.168.110.249:8000/api/updateDownCount/' + contentID + '', {
+        axios.get(BASE_PATH + '/api/updateDownCount/' + contentID + '', {
             headers: {
                 'Content-Type': 'application/json;charset=utf-8',
                 'Authorization': 'bearer ' + (await AsyncStorage.getItem('userToken')).toString()
@@ -446,9 +447,9 @@ class StageTwo extends Component {
                                                 <Icon name="heart" size={25} color={item['userID'] ? "rgb(250, 185, 75)" : "white"} />
                                             </TouchableOpacity>
                                         </View>
-                                        <Image style={styles.albumImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
-                                        {/* <Image style={styles.albumImage} source={{ uri: "http://192.168.110.249:8000/" + (item['albumID'] == this.state.clickedAlbumID ? this.state.clickedThumb : item['thumbnailURL']) }} /> */}
-                                        {/* <Image style={styles.albumImage} source={{ uri: "http://192.168.110.249:8000/" + this.state.clickedThumb }} /> */}
+                                        <Image style={styles.albumImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
+                                        {/* <Image style={styles.albumImage} source={{ uri: BASE_PATH + "/" + (item['albumID'] == this.state.clickedAlbumID ? this.state.clickedThumb : item['thumbnailURL']) }} /> */}
+                                        {/* <Image style={styles.albumImage} source={{ uri: BASE_PATH + "/" + this.state.clickedThumb }} /> */}
                                         <View style={{ position: 'absolute', bottom: 30, width: width * 0.4, height: width * 0.35, zIndex: 90 }}>
                                             <View style={styles.imgAlbumNameArea}>
                                                 <Text style={styles.imgAlbumName} >{item['title']}</Text>
@@ -556,7 +557,7 @@ class StageTwo extends Component {
                                     console.log('===================state clicked ===============', this.state.clickedAlbumID)
                                 }} activeOpacity={0.6} >
                                     <View style={styles.borderImageGroup}>
-                                        <Image style={styles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
+                                        <Image style={styles.borderImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
                                         <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
                                             <View style={styles.imgAlbumNameArea2}>
                                                 <Text style={styles.imgAlbumName2} >{item['title']}</Text>
@@ -596,7 +597,7 @@ class StageTwo extends Component {
                                     console.log('===================state clicked ===============', this.state.clickedAlbumID)
                                 }} activeOpacity={0.6} >
                                     <View style={styles.borderImageGroup}>
-                                        <Image style={styles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
+                                        <Image style={styles.borderImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
                                         <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
                                             <View style={styles.imgAlbumNameArea2}>
                                                 <Text style={styles.imgAlbumName2} >{item['title']}</Text>
@@ -640,7 +641,7 @@ class StageTwo extends Component {
                                                             })
                                                         }} activeOpacity={0.6} >
                                                             <View style={styles.borderImageGroup}>
-                                                                <Image style={styles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['artist_thumbnailURL'] }} />
+                                                                <Image style={styles.borderImage} source={{ uri: BASE_PATH + "/" + item['artist_thumbnailURL'] }} />
                                                                 <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
                                                                     <View style={styles.imgAlbumNameArea2}>
                                                                         <Text style={styles.imgAlbumName2} >{item['title']}</Text>
@@ -682,7 +683,7 @@ class StageTwo extends Component {
                                                 })
                                             }} activeOpacity={0.6} >
                                                 <View style={styles.borderImageGroup}>
-                                                    <Image style={styles.borderImage} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
+                                                    <Image style={styles.borderImage} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
                                                     <View style={{ position: 'absolute', bottom: 0, width: 100, height: 85, zIndex: 100 }}>
                                                         <View style={styles.imgAlbumNameArea2}>
                                                             <Text style={styles.imgAlbumName2} >{item['name']}</Text>

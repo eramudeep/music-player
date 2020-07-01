@@ -40,7 +40,6 @@ export default class Signup extends Component {
             lastplaceholder: 'Last name',
             emailplaceholer: 'Email',
             passwordplaceholder: 'Password',
-            // phoneplaceholder: '',
             modalVisible: false,
             Error: '',
             timeFlag: false,
@@ -78,21 +77,12 @@ export default class Signup extends Component {
     }
 
     componentDidMount = async () => {
-        // StatusBar.setHidden(true);
-        // const langCode = await languageSwitcher.getCurrentLanguageCode();
-        // let langCode = await AsyncStorage.getItem('languageCode')
-        // await languageSwitcher.switchTo(langCode);
-        // alert(langCode);
-        // setTimeout(() => RNRestart.Restart(), 10);
         console.disableYellowBox = "true"
     }
 
     async UNSAFE_componentWillMount() {
-        // alert('UNSAFE_componentWillMount')
-        // const langCode = await languageSwitcher.getCurrentLanguageCode();
         let langCode = await AsyncStorage.getItem('languageCode')
         await languageSwitcher.switchTo(langCode);
-        // setTimeout(() => RNRestart.Restart(), 10);
         if ((await AsyncStorage.getItem("languageCode")).toString() == 'ar') {   //
             strings.setLanguage('ar')   //
             this.setState({   //
@@ -143,12 +133,12 @@ export default class Signup extends Component {
                 email: this.state.email,
                 password: this.state.password,
             };
-            var myTimer = setTimeout(function () { this.NetworkSensor() }.bind(this), 5000)
+            var myTimer = setTimeout(function () { this.NetworkSensor() }.bind(this), 8000)
             this.setState({
                 loading: true
             })
-            console.log('BASE_PATH========================2=', BASE_PATH)
 
+            // axios.post(BASE_PATH + '/api/auth/register', body)
             axios.post(BASE_PATH + '/api/auth/register', body)
                 .then((response) => {
                     this.setState({ loading: false })
@@ -157,7 +147,6 @@ export default class Signup extends Component {
                     this.Warning()
                     clearTimeout(myTimer);
 
-                    // this.props.navigation.navigate('Login');
                 }, (err) => {
                     if (!this.state.timeFlag) {
                         if (err.message == "Request failed with status code 500") {
@@ -174,7 +163,7 @@ export default class Signup extends Component {
                             this.Warning()
                         }
                         clearTimeout(myTimer);
-                        console.log('************error *************************************:', JSON.stringify(err))
+                        console.log('*******error *******:', JSON.stringify(err))
                     } else {
                         this.setState({ timeFlag: false })
                     }
@@ -213,7 +202,6 @@ export default class Signup extends Component {
                 source={require('../assets/images/login3.png')}
                 resizeMode={'stretch'}
                 style={{ height: '100%', flex: 1 }}>
-
                 <Modal
                     width={0.9}
                     visible={this.state.modalVisible}
@@ -278,15 +266,6 @@ export default class Signup extends Component {
                                 />
                             </View>
                         </View>
-                        {/* <View style={{ flexDirection: 'row', marginBottom: 10 }} >
-                                <View style={styles.phoneInput}>
-                                    <TextInput keyboardType='email' style={styles.phone}
-                                        onChangeText={(text) => { this.onChangeHandle(text) }}
-                                        value={this.state.phone}
-                                        placeholder={this.state.phoneplaceholder}
-                                    />
-                                </View>
-                            </View> */}
                         <View style={{ flexDirection: 'row', marginBottom: 10 }} >
                             <View style={styles.phoneInput}>
                                 {/* <Text style={{ color: 'black', paddingBottom: 10, alignSelf: 'center', paddingTop: 7 }}>{strings.enteremail}:</Text> */}

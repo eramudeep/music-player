@@ -16,12 +16,13 @@ import Modal, {
     SlideAnimation,
     ScaleAnimation,
 } from 'react-native-modals';
+import { BASE_PATH } from '../api/config';
 
 class Pop extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            backimage: 'http://192.168.110.249:8000/thumbnails/login3.png',
+            backimage: BASE_PATH + '/thumbnails/login3.png',
             clicked: '',
             clickedType: '',
             clickedSource: '',
@@ -44,13 +45,13 @@ class Pop extends Component {
             if (JSON.parse(result) == null) {
 
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedSource,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedSource,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedSource[this.state.clickedSource.length - 3]}${this.state.clickedSource[this.state.clickedSource.length - 2]}${this.state.clickedSource[this.state.clickedSource.length - 1]}`,
                 }).promise.then((r) => {
 
                 });
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedThumb,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedThumb,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedThumb[this.state.clickedThumb.length - 3]}${this.state.clickedThumb[this.state.clickedThumb.length - 2]}${this.state.clickedThumb[this.state.clickedThumb.length - 1]}`,
                 }).promise.then((r) => {
                     AsyncStorage.setItem('data', JSON.stringify([{
@@ -70,12 +71,12 @@ class Pop extends Component {
             }
             else {
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedSource,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedSource,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedSource[this.state.clickedSource.length - 3]}${this.state.clickedSource[this.state.clickedSource.length - 2]}${this.state.clickedSource[this.state.clickedSource.length - 1]}`,
                 }).promise.then((r) => {
                 });
                 RNFS.downloadFile({
-                    fromUrl: 'http://192.168.110.249:8000/' + this.state.clickedThumb,
+                    fromUrl: BASE_PATH + '/' + this.state.clickedThumb,
                     toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedThumb[this.state.clickedThumb.length - 3]}${this.state.clickedThumb[this.state.clickedThumb.length - 2]}${this.state.clickedThumb[this.state.clickedThumb.length - 1]}`,
                 }).promise.then((r) => {
                     let temp = JSON.parse(result);
@@ -222,14 +223,14 @@ class Pop extends Component {
                                 this.setState({
                                     downClicked: true,
                                     playClicked: true,
-                                    backimage: "http://192.168.110.249:8000/" + item['thumbnailURL'],
+                                    backimage: BASE_PATH + "/" + item['thumbnailURL'],
                                     clicked: item,
                                     clickedType: item['Type'],
                                     clickedThumb: item['thumbnailURL'],
                                     clickedSource: item['contentURL']
                                 })
                             }} >
-                                <Image style={{ ...styles.borderImage1, marginLeft: 30 }} source={{ uri: "http://192.168.110.249:8000/" + item['thumbnailURL'] }} />
+                                <Image style={{ ...styles.borderImage1, marginLeft: 30 }} source={{ uri: BASE_PATH + "/" + item['thumbnailURL'] }} />
                                 <Text style={{ ...styles.imgName, marginLeft: 30 }} >{item['title']}</Text>
                             </TouchableOpacity>
                         )}
