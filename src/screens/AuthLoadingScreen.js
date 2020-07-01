@@ -6,8 +6,11 @@ import {
   View,
 } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
+import { languageSwitcher } from '../helpers/Language';
 export default class AuthLoadingScreen extends React.Component {
-  componentDidMount() {
+  componentDidMount=async()=> {
+   
+    // this.setState({ langSelectionID: langCode });
       console.disableYellowBox=true
     StatusBar.setHidden(true)
     // AsyncStorage.clear()

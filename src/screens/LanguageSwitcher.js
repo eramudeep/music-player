@@ -25,14 +25,14 @@ export default class LangSwitcher extends Component {
 
   async componentWillMount() {
     alert((await AsyncStorage.getItem("languageCode")).toString())
-    if ((await AsyncStorage.getItem("languageCode")).toString() == 'ar') {
-      this.setState({
-        currentLang: 'ar'
-      })
-    } else {
+    if ((await AsyncStorage.getItem("languageCode")).toString() == 'en') {
       this.setState({
         currentLang: 'en'
       })
+    } else {
+      this.setState({
+        currentLang: 'ar'
+      }) 
     }
   }
 

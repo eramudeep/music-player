@@ -5,7 +5,7 @@ import strings from '../strings';
 import NavigationService from '../navigators/NavigationService';
 
 const defaultLanguageCode = 'ar'
-
+ 
 export const languageSwitcher = {
 
     async startup() { 
@@ -24,7 +24,7 @@ export const languageSwitcher = {
         if (selectedLanIsRTL !== isRTL) {
             allowRTL(selectedLanIsRTL)
             forceRTL(selectedLanIsRTL)
-            setTimeout(() => RNRestart.Restart(), 10);
+            setTimeout(() => RNRestart.Restart(), 1);
         }
 
     },
