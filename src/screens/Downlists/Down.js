@@ -56,8 +56,13 @@ class Down extends Component {
 
     }
 
-    handleRemove() {
-
+    async handleRemove() {
+    //    await AsyncStorage.getItem('data', (err, result) => {
+    //         let temp = JSON.parse(result);
+    //         console.log("temp",temp);
+    //    }).catch(err=>console.log("async err",err)
+    //    )
+    //    return
         RNFS.unlink(`file://${RNFS.DocumentDirectoryPath}/${this.state.removeclicked['source']}`).then((r) => {
 
         }).catch(error => {
@@ -67,6 +72,8 @@ class Down extends Component {
         RNFS.unlink(`file://${RNFS.DocumentDirectoryPath}/${this.state.removeclicked['thumb']}`).then((r) => {
             AsyncStorage.getItem('data', (err, result) => {
                 let temp = JSON.parse(result);
+                console.log("temp",temp);
+                
                 let index = '';
                 for (var i = 0; i < temp.length; i++) {
                     if (this.state.removeclicked['title'] == temp[i]['title']) {
@@ -187,6 +194,8 @@ class Down extends Component {
                             <TouchableOpacity
 
                             >
+                                {console.log("-->>",item)
+                                }
                                 <TouchableOpacity
                                     onPress={async() => {
                                         // console.log((await AsyncStorage.getItem('data')).toString())

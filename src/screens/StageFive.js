@@ -84,7 +84,7 @@ class StageFive extends Component {
         let artist_name = this.props.navigation.getParam('artist_name')
         let album_name = this.props.navigation.getParam('album_name')
         let previousScreen = this.props.navigation.getParam('previousScreen')
-
+        
 
         // alert(contentID)
         // this.props.FetchAlbums(genreID, artistID)
@@ -94,10 +94,11 @@ class StageFive extends Component {
             contentIDState: contentID,
             clickedTitle: title,
             clickedType: type,
-            clickedSource: contentURL
+            clickedSource: contentURL,
+            clicked:this.props.album ? this.props.album.getContentsOfOneAlbum[0] : []
         })
 
-        console.log('===this.props.album.getContentsOfOneAlbum= ', this.props.album.getContentsOfOneAlbum[0]['album_name'])
+        console.log('===this.props.album.getContentsOfOneAlbum= ',this.props.album )
 
         this.setState({
             album_name: this.props.album.getContentsOfOneAlbum[0]['album_name'],
@@ -171,22 +172,38 @@ class StageFive extends Component {
         this.props.FetchAlbumSong(genType, albumID)
     }
 
-    onDownloadPress() {
+    onDownloadPress=()=> {
+        console.log("state", this.state);
+        
+        console.log("this.state.clickedSource",this.state.clickedSource);
+        console.log("this.state.clicked",this.state.clicked);
+        // return
+        if (!this.state.clicked) {
+            return
+        }
         AsyncStorage.getItem('data', (err, result) => {
+            console.log("ressss",);
+            const response=JSON.parse(result)
+            for(let val in response){
+                if(response[val].id==this.state.clicked.id){
+                    alert("song already Downloaded")
+                    return
+                }                    
+            }
             if (JSON.parse(result) == null) {
                 RNFS.downloadFile({
-                    fromUrl: BASE_PATH + '/' + this.state.clickedSource,
-                    toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedSource[this.state.clickedSource.length - 3]}${this.state.clickedSource[this.state.clickedSource.length - 2]}${this.state.clickedSource[this.state.clickedSource.length - 1]}`,
+                    fromUrl: BASE_PATH + '/' + this.state.clicked.contentURL,
+                    toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clicked.contentURL[this.state.clicked.contentURL.length - 3]}${this.state.clicked.contentURL[this.state.clicked.contentURL.length - 2]}${this.state.clicked.contentURL[this.state.clicked.contentURL.length - 1]}`,
                 }).promise.then((r) => {
                 });
                 RNFS.downloadFile({
-                    fromUrl: BASE_PATH + '/' + this.state.clickedThumb,
-                    toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedThumb[this.state.clickedThumb.length - 3]}${this.state.clickedThumb[this.state.clickedThumb.length - 2]}${this.state.clickedThumb[this.state.clickedThumb.length - 1]}`,
+                    fromUrl: BASE_PATH + '/' + this.state.clicked.thumbnailURL,
+                    toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clicked["thumbnailURL"][this.state.clicked["thumbnailURL"].length - 3]}${this.state.clicked["thumbnailURL"][this.state.clicked["thumbnailURL"].length - 2]}${this.state.clicked["thumbnailURL"][this.state.clicked["thumbnailURL"].length - 1]}`,
                 }).promise.then((r) => {
                     AsyncStorage.setItem('data', JSON.stringify([{
-                        id: 1, title: this.state.clicked['title'], thumb: this.state.clicked['title'] + '.' + this.state.clickedThumb[this.state.clickedThumb.length - 3] + this.state.clickedThumb[this.state.clickedThumb.length - 2] + this.state.clickedThumb[this.state.clickedThumb.length - 1],
-                        source: this.state.clicked['title'] + '.' + this.state.clickedSource[this.state.clickedSource.length - 3] + this.state.clickedSource[this.state.clickedSource.length - 2] + this.state.clickedSource[this.state.clickedSource.length - 1],
-                        type: this.state.clickedType
+                        id: this.state.clicked.id, title: this.state.clicked['title'], thumb: this.state.clicked['title'] + '.' + this.state.clicked["thumbnailURL"][this.state.clicked["thumbnailURL"].length - 3] + this.state.clicked["thumbnailURL"][this.state.clicked["thumbnailURL"].length - 2] + this.state.clicked["thumbnailURL"][this.state.clicked["thumbnailURL"].length - 1],
+                        source: this.state.clicked['title'] + '.' + this.state.clicked.contentURL[this.state.clicked.contentURL.length - 3] + this.state.clicked.contentURL[this.state.clicked.contentURL.length - 2] + this.state.clicked.contentURL[this.state.clicked.contentURL.length - 1],
+                        type: this.state.clicked.type
                     }]));
                     this.setState({ modalVisible: false })
                     this.setState({
@@ -200,19 +217,19 @@ class StageFive extends Component {
             }
             else {
                 RNFS.downloadFile({
-                    fromUrl: BASE_PATH + '/' + this.state.clickedSource,
-                    toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedSource[this.state.clickedSource.length - 3]}${this.state.clickedSource[this.state.clickedSource.length - 2]}${this.state.clickedSource[this.state.clickedSource.length - 1]}`,
+                    fromUrl: BASE_PATH + '/' + this.state.clicked.contentURL,
+                    toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clicked.contentURL[this.state.clicked.contentURL.length - 3]}${this.state.clicked.contentURL[this.state.clicked.contentURL.length - 2]}${this.state.clicked.contentURL[this.state.clicked.contentURL.length - 1]}`,
                 }).promise.then((r) => {
                 });
                 RNFS.downloadFile({
-                    fromUrl: BASE_PATH + '/' + this.state.clickedThumb,
-                    toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clickedThumb[this.state.clickedThumb.length - 3]}${this.state.clickedThumb[this.state.clickedThumb.length - 2]}${this.state.clickedThumb[this.state.clickedThumb.length - 1]}`,
+                    fromUrl: BASE_PATH + '/' + this.state.clicked.thumbnailURL,
+                    toFile: `${RNFS.DocumentDirectoryPath}/${this.state.clicked['title']}.${this.state.clicked.thumbnailURL[this.state.clicked.thumbnailURL.length - 3]}${this.state.clicked.thumbnailURL[this.state.clicked.thumbnailURL.length - 2]}${this.state.clicked.thumbnailURL[this.state.clicked.thumbnailURL.length - 1]}`,
                 }).promise.then((r) => {
                     let temp = JSON.parse(result);
                     temp.push({
-                        id: 1, title: this.state.clicked['title'], thumb: this.state.clicked['title'] + '.' + this.state.clickedThumb[this.state.clickedThumb.length - 3] + this.state.clickedThumb[this.state.clickedThumb.length - 2] + this.state.clickedThumb[this.state.clickedThumb.length - 1],
-                        source: this.state.clicked['title'] + '.' + this.state.clickedSource[this.state.clickedSource.length - 3] + this.state.clickedSource[this.state.clickedSource.length - 2] + this.state.clickedSource[this.state.clickedSource.length - 1],
-                        type: this.state.clickedType
+                        id: this.state.clicked.id, title: this.state.clicked['title'], thumb: this.state.clicked['title'] + '.' + this.state.clicked.thumbnailURL[this.state.clicked.thumbnailURL.length - 3] + this.state.clicked.thumbnailURL[this.state.clicked.thumbnailURL.length - 2] + this.state.clicked.thumbnailURL[this.state.clicked.thumbnailURL.length - 1],
+                        source: this.state.clicked['title'] + '.' + this.state.clicked.contentURL[this.state.clicked.contentURL.length - 3] + this.state.clicked.contentURL[this.state.clicked.contentURL.length - 2] + this.state.clicked.contentURL[this.state.clicked.contentURL.length - 1],
+                        type: this.state.clicked.type
                     });
                     AsyncStorage.setItem('data', JSON.stringify(temp));
 
@@ -490,12 +507,13 @@ class StageFive extends Component {
                                 <TouchableOpacity onPress={async () => {
                                     let userID = await AsyncStorage.getItem('userID')
                                     this.setState({
+                                        clicked: item,
                                         contentIDState: item['id'],
                                         clickedThumb: item['thumbnailURL'],
                                         clickedTitle: item['title'],
                                         clickedType: item['type'],
                                         clickedSource: item['contentURL'],
-                                        clicked: item
+                                        
                                     })
                                     await this.props.FetchHeartOrNot(userID,item['id'])
                                 }} activeOpacity={0.6} >
