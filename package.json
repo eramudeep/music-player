@@ -15,7 +15,7 @@
     "@react-native-community/masked-view": "^0.1.6",
     "@react-native-community/slider": "^2.0.9",
     "@react-navigation/material-top-tabs": "^5.0.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "fluidbottomnavigation-rn": "^0.1.1",
     "i18n-js": "^3.5.1",
     "react": "16.9.0",
